@@ -1,0 +1,50 @@
+$prim-font-stack:		Georgia, serif;
+$sec-font-stack:		'Open Sans', Inconsolata, arial, sans-serif;
+$header-bg-color: 	#fbfbfb;
+$link-color:				#65C7FD;
+$border: 						1px solid #ddd;
+$padding:						2em;
+$extra-padding:			4em;
+
+.border {
+	border: $border;
+}
+.padding-top, .space-top {
+	padding-top: $padding;
+}
+.padding-bottom, .space-bottom {
+	padding-bottom: $padding;
+}
+.more-padding-top, .extra-space-top {
+	padding-top: $extra-padding;
+}
+.more-padding-bottom, .extra-space-bottom {
+	padding-bottom: $extra-padding;
+}
+.content {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	max-width: 1111px;
+}
+.leading {
+	font-size: 2.1em;
+	line-height: 1.5;
+}
+.justify {
+	text-align: justify;
+}
+.block {
+	display: block;
+}
+.float-center {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+.align-center { text-align: center; }
+.align-left   { text-align: left; }
+.align-right  { text-align: right; }
+.pull-left    { float: left; }
+.pull-right   { float: right; }
+.uppercase	  { text-transform: uppercase; }

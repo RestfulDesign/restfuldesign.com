@@ -1,0 +1,58 @@
+@import "gridism";
+@import "globals";
+@import "base64";
+@import "header";
+@import "services";
+@import "portfolio";
+@import "the-team";
+@import "quotes";
+@import "animate";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+}
+html {
+  box-sizing: border-box;
+}
+
+body {
+	font: 62.5% $prim-font-stack;
+	line-height: 1.43;
+	color: #111;
+}	
+h1, h2, h3 {
+/*	text-align: center;*/
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+}
+h1 {
+	padding-top: 1em;
+	font-size: 2.6em;
+	color: #4d4d4d;
+	clear: both;
+}
+h2 {
+/*	font-size: 21px;*/
+	color: #9e9e9e;
+}
+h3 {
+	font-size: 2.6em;
+}
+a {
+	font-size: 1.4em;
+	color: $link-color;
+	font-family: $sec-font-stack;
+}
+p {
+	font-family: $sec-font-stack;
+	font-size: 1.6em;
+}
+@import "mediaqueries";

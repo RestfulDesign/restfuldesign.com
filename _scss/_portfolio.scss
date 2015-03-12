@@ -1,0 +1,25 @@
+.portfolio {
+	overflow: hidden;
+}
+.portfolio img {
+	position: absolute;
+	width: 150%;
+}
+.portfolio a {
+	font-size: 1.7em;
+}
+.left-pos {
+	left: $padding;
+}
+.right-pos {
+	right: $padding;
+}
+.portfolio .grid {
+	min-height: 480px;
+}
+.portfolio ul {
+	font-size: 1.6em;
+}
+.portfolio li {
+	list-style-position: inside;
+}

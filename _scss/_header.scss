@@ -1,0 +1,49 @@
+.header {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 30px;
+	background-color: $header-bg-color;
+}
+.header img.logo {
+	margin: 0 auto;
+	display: block;
+}
+.header ul {
+	overflow: hidden;
+  margin: 0;
+  padding: 0;
+	margin: 10px auto;
+	display: block;
+}
+.header li {
+	list-style: none;
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+.header a {
+	text-decoration: none;
+	letter-spacing: 0.6px;
+	text-transform: uppercase;
+}
+.header picture {
+	margin-top: 4em;
+}
+.picture img {
+	display: block;
+	margin: 4em auto 0;
+}
+.header .show-more-arrow {
+	display: block;
+	margin: 2em auto 0;
+	width: 60px;
+	height: 80px;
+	font-size: 12px;
+	text-align: center;
+	color: #c3c2c2;
+	fill: blue;
+}
+.header .show-more-arrow img {
+	margin-top: 5px;
+}
