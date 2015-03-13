@@ -168,7 +168,9 @@ header a.show-more-arrow:hover {
   width: 100%;
   margin: 0 auto;
   padding-top: 30px;
-  background-color: #fbfbfb; }
+  /*	background-color: $header-bg-color;*/
+  background: #fbfbfb url('/dist/img/stockholm-white.jpg') no-repeat center center;
+  background-size: cover; }
 
 .header img.logo {
   margin: 0 auto;
@@ -2923,8 +2925,7 @@ body {
   color: #111; }
 
 h1, h2, h3 {
-  /*	text-align: center;*/
-  font-weight: 400;
+  font-weight: 300;
   -webkit-font-smoothing: antialiased; }
 
 h1 {
