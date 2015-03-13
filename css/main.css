@@ -105,10 +105,16 @@
   border: 1px solid #ddd; }
 
 .padding-top, .space-top {
-  padding-top: 2em; }
+  padding-top: 2em !important; }
+
+.padding-right, .space-right {
+  padding-right: 2em !important; }
 
 .padding-bottom, .space-bottom {
-  padding-bottom: 2em; }
+  padding-bottom: 2em !important; }
+
+.padding-left, .space-left {
+  padding-left: 2em !important; }
 
 .more-padding-top, .extra-space-top {
   padding-top: 4em; }
@@ -124,7 +130,9 @@
 
 .leading {
   font-size: 2.1em;
-  line-height: 1.5; }
+  line-height: 1.5;
+  max-width: 60%;
+  display: block; }
 
 .justify {
   text-align: justify; }
@@ -168,9 +176,9 @@ header a.show-more-arrow:hover {
   width: 100%;
   margin: 0 auto;
   padding-top: 30px;
-  /*	background-color: $header-bg-color;*/
-  background: #fbfbfb url('/dist/img/stockholm-white.jpg') no-repeat center center;
-  background-size: cover; }
+  background-color: #fbfbfb;
+  /*	background: $header-bg-color url('/dist/img/stockholm-white.jpg') no-repeat center center;
+	background-size: cover;*/ }
 
 .header img.logo {
   margin: 0 auto;
@@ -235,11 +243,6 @@ header a.show-more-arrow:hover {
   padding: 2em 0 1em;
   font-size: 3.1em; }
 
-.services p {
-  display: block;
-  margin: 2em 1em 0;
-  color: #555; }
-
 .services ul {
   margin-top: 2em;
   margin-bottom: 3em; }
@@ -281,7 +284,10 @@ header a.show-more-arrow:hover {
   list-style-position: inside; }
 
 .the-team {
-  background-color: #E1E9EA; }
+  /*	background-color: #E1E9EA;
+	*/
+  background: #fbfbfb url('/dist/img/stockholm-white.jpg') no-repeat center center;
+  background-size: cover; }
 
 .the-team img {
   width: 20em;
@@ -2905,6 +2911,9 @@ Copyright (c) 2014 Daniel Eden
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
+.footer {
+  min-height: 480px; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -2936,7 +2945,7 @@ h1 {
 
 h2 {
   /*	font-size: 21px;*/
-  color: #9e9e9e; }
+  color: #555; }
 
 h3 {
   font-size: 2.6em; }
