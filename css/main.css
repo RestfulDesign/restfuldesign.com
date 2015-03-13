@@ -259,8 +259,8 @@ header a.show-more-arrow:hover {
   overflow: hidden; }
 
 .portfolio img {
-  position: absolute;
-  width: 150%; }
+  /*	position: absolute;*/
+  width: 100%; }
 
 .portfolio a {
   font-size: 1.7em; }
@@ -2974,7 +2974,7 @@ p {
 
 @media screen and (min-width: 52em) {
   h1 {
-    font-size: 36px;
+    font-size: 4.8em;
     padding-top: 2em; }
   h2 {
     font-size: 29px; }
@@ -3019,7 +3019,7 @@ p {
 		}
 	}*/
   h1 {
-    font-size: 48px; }
+    font-size: 6.4em; }
   h2 {
     font-size: 36px; }
   h3 {
