@@ -104,6 +104,9 @@
 .border {
   border: 1px solid #ddd; }
 
+.less-padding-top {
+  padding-top: 1em !important; }
+
 .padding-top, .space-top {
   padding-top: 2em !important; }
 
@@ -175,10 +178,12 @@ header a.show-more-arrow:hover {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 2em;
   background-color: #fbfbfb;
-  /*	background: $header-bg-color url('/dist/img/stockholm-white.jpg') no-repeat center center;
-	background-size: cover;*/ }
+  background: #fbfbfb url('/dist/img/gradient-2.jpg') no-repeat center center;
+  /*http://angrytools.com/gradient/image.php?0_ffffff,100_ffdda0&0_68,100_100&l_300|0_ffffff,100_ff00ff&0_0,100_100&l_212|0_00ffff,100_800080&0_75,71_100&r_56*/
+  /*http://angrytools.com/gradient/image.php?0_ffffff,100_ffdda0&0_54,100_100&l_35|0_ffffff,100_ff00ff&0_0,100_100&l_212|0_00ffff,100_800080&0_75,71_100&r_56*/
+  background-size: cover; }
 
 .header img.logo {
   margin: 0 auto;
@@ -188,7 +193,7 @@ header a.show-more-arrow:hover {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  margin: 10px auto;
+  margin: 0 auto;
   display: block; }
 
 .header li {
@@ -199,7 +204,7 @@ header a.show-more-arrow:hover {
 
 .header a {
   text-decoration: none;
-  letter-spacing: 0.6px;
+  letter-spacing: 1px;
   text-transform: uppercase; }
 
 .header picture {
@@ -231,6 +236,8 @@ header a.show-more-arrow:hover {
     display: block;
     max-width: 80px;
     margin: 3em auto; }
+  #services p {
+    color: #7b7c7c; }
 
 .services a {
   border: 1px solid #65c7fd;
@@ -2983,8 +2990,7 @@ p {
 
 @media screen and (min-width: 52em) {
   h1 {
-    font-size: 4.8em;
-    padding-top: 2em; }
+    font-size: 4.8em; }
   h2 {
     font-size: 29px; }
   .header img.logo {
@@ -2992,16 +2998,14 @@ p {
   .header ul {
     width: initial;
     float: right;
-    display: table;
     margin: 0 -10px 0 0; }
   .header li {
-    display: table-cell;
     vertical-align: middle;
     float: left;
     width: initial; }
   .header li a {
     padding: 10px;
-    line-height: 54px; }
+    line-height: 30px; }
   #services {
     /*		width: 90%;*/
     margin: 2em auto; }

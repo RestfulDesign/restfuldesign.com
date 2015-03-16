@@ -2,12 +2,17 @@ $prim-font-stack:		Georgia, serif;
 $sec-font-stack:		'Open Sans', Inconsolata, arial, sans-serif;
 $header-bg-color: 	#fbfbfb;
 $link-color:				#65C7FD;
+$grey:							#7b7c7c;
 $border: 						1px solid #ddd;
+$less-padding:			1em;
 $padding:						2em;
 $extra-padding:			4em;
 
 .border {
 	border: $border;
+}
+.less-padding-top {
+	padding-top: $less-padding !important;
 }
 .padding-top, .space-top {
 	padding-top: $padding !important;
