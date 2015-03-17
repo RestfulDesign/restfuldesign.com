@@ -2,9 +2,11 @@
 @import "globals";
 @import "base64";
 @import "header";
+@import "nav";
 @import "services";
 @import "portfolio";
 @import "the-team";
+@import "shopify";
 @import "quotes";
 @import "animate";
 @import "footer";
@@ -21,8 +23,8 @@ html, body {
 }
 html {
   box-sizing: border-box;
+	position: relative;
 }
-
 body {
 	font: 62.5% $prim-font-stack;
 	line-height: 1.43;

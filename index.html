@@ -2,16 +2,21 @@
 layout: default
 title: Restfuldesign.com | Webb design och utveckling 
 ---
+
 <header class="header">
+	<nav class="nav">
+		<div class="content">
+			<img class="logo" width="180" src="dist/img/rd-logo.svg" onerror="this.src='/dist/img/rd-logo-black.png">
+			<!-- <img class="logo" width="180" src="dist/img/rd-logo-black.png"> -->
+			<ul>
+				<li><a href="#services">tjänster</a></li>
+				<li><a href="#portfolio">portfölj</a></li>
+				<li><a href="#the-team">om oss</a></li>
+				<li><a href="#contact">kontakt</a></li>
+			</ul>
+		</div>
+	</nav>
 	<div class="content">
-		<!-- <img class="logo" width="180" src="dist/img/rd-logo-black.png"> -->
-		<img class="logo" width="180" src="dist/img/rd-logo.svg" style="fill:red;" onerror="this.src='/dist/img/rd-logo-black.png">
-		<ul>
-			<li><a href="#services">tjänster</a></li>
-			<li><a href="#portfolio">portfölj</a></li>
-			<li><a href="#the-team">om oss</a></li>
-			<li><a href="#contact">kontakt</a></li>
-		</ul>
 		<h1 class="align-center">Webbutveckling och E-handel</h1>
 		<h2 class="align-center">- Kostnadseffektivt med rätt teknik</h2>
 		<!-- <a href="#services" class="show-more-arrow wow bounce" data-wow-delay="2s">
@@ -21,22 +26,22 @@ title: Restfuldesign.com | Webb design och utveckling
 			<!--[if IE 9]><video style="display: none;"><![endif]-->
 			<source srcset="dist/img/organic-sweden-large.jpg" media="(min-width: 1280px)" >
 			<source srcset="dist/img/big.jpg" media="(min-width: 1024px)">
-			<source srcset="dist/img/roland-persson-ipad.jpg" media="(min-width: 768px)">
+			<source srcset="dist/img/roland-persson-ipad.png" media="(min-width: 768px)">
 			<!--[if IE 9]></video><![endif]-->
 			<img srcset="dist/img/small.jpg" alt="smartphone" class="picture wow fadeInUp padding-top">
 		</picture>
 	</div>
 </header>
-<section id="services" class="services content extra-space-bottom">
-	<p class="leading float-center  space-top">
-		Med en bred teknisk kompetens kan vi bygga från grunden, skapa lösningar anpassade till era behov med ett helt unikt utseende.
-	</p>
-	<div class="grid">
-		<h2 class="uppercase align-center">Tjänster</h2>
+<section id="services" class="services extra-space-bottom">
+	<div class="grid content">
+		<!-- <p class="leading float-center space-top">
+			Med en bred teknisk kompetens kan vi bygga från grunden, skapa lösningar anpassade till era behov med ett helt unikt utseende.
+		</p> -->
+		<!-- <h2 class="uppercase align-center">Tjänster</h2> -->
 		<div class="unit one-third wow fadeInUp">
 			<div class="">
 			 	<div class="img-wrapper">
-			 		<img src="dist/img/shopify-logo-grey.png" alt="...">		
+			 		<img src="dist/img/shopify-logo-grey.png" alt="shopify logo">		
 				</div>
 				<h3>E-handel</h3>
 			 	<p class="less-padding-top more-padding-bottom">
@@ -52,7 +57,7 @@ title: Restfuldesign.com | Webb design och utveckling
 				</div>
 				<h3>Design</h3>
 				<p class="less-padding-top more-padding-bottom">
-					Vi kan hjälpa er att ta fram en helt egen design eller jobba från en befintligt design och göra den bättre.
+					Vi kan hjälpa er att ta fram en helt egen design eller jobba utifrån en befintligt och göra den bättre.
 					Möjligheterna är oändliga.
 				</p>
 				<a href="/design">läs mer</a>
@@ -61,11 +66,11 @@ title: Restfuldesign.com | Webb design och utveckling
 		<div class="unit one-third wow fadeInUp">
 			<div class="">
 				<div class="img-wrapper">
-					<img src="dist/img/cogs-small.png" width="100" alt="...">
+					<img src="dist/img/web-dev-keywords.png" width="100" alt="...">
 				</div>
 				<h3>Utveckling</h3>	
 				<p class="less-padding-top more-padding-bottom">
-					 Vi jobbar mot en mängd olika databaser samt programmeringsspråk. Detta gör att vi är flexibla på vilka CMS och system vi erbjuder.
+					 Vi jobbar mot en mängd olika programmeringsspråk och databaser. Detta gör att vi är flexibla med vilka CMS och system vi erbjuder.
 				</p>
 				<a href="development">läs mer</a>
 			</div>
@@ -215,7 +220,7 @@ title: Restfuldesign.com | Webb design och utveckling
 	</div>
 </section>
 <section id="the-team" class="the-team more-padding-top more-padding-bottom">
-  <div class="container grid content">
+  <div class="grid content">
     <h2 class="align-center uppercase">Vilka är vi?</h2>
     <div class="unit whole">
       <p class="leading align-center float-center space-bottom">
@@ -223,7 +228,7 @@ title: Restfuldesign.com | Webb design och utveckling
 			</p>
       <div class="unit one-third space-bottom space-top wow slideInLeft align-center" data-wow-delay=".4s">
         <img src="dist/img/oskar-engdahl.jpg" alt="foto Oskar Engdahl" class="float-center block">
-        <h3 class="text-center space-top">Oskar Engdahl</h3>
+        <h3 class="space-top">Oskar Engdahl</h3>
         <p>Designer</p>
       </div>
       <div class="unit one-third space-bottom space-top wow slideInUp align-center">
@@ -238,6 +243,90 @@ title: Restfuldesign.com | Webb design och utveckling
     	</div>
     </div>
   </div>
+</section>
+<section class="web-dev more-padding-top more-padding-bottom">
+	<div class="grid content">
+		<h2 class="align-center less-padding-bottom">Webbutveckling - Skräddarsydda lösningar med unik Design</h2>
+		<div class="unit golden-small web-dev-keywords padding-right">
+			<img src="dist/img/web-dev-keywords.png" style="width:100%" alt="Web Dev Keywords">
+		</div>
+		<div class="unit golden-large">
+			<p>
+				Med en bred teknisk kompetens kan vi bygga från grunden och vår styrka är att göra lite svårare integreringar, lösningar helt anpassade till era behov och med ett helt unikt utseende. Vi jobbar mot en mängd olika databaser samt programmeringsspråk. Detta gör att vi är flexibla på vilka CMS och system vi jobbar mot. Vi jobbar både projektbaserat men också mer kontiuerligt med support. Typ av projekt: Hemsidor, webbplattformar och mjukvaruapplikationer.
+			</p>
+		</div>
+	</div>
+</section>
+<section class="web-dev more-padding-top more-padding-top more-padding-bottom">
+	<div class="grid content">
+		<h2 class="align-center less-padding-bottom">Analyser - För bättre SEO, rätt marknadsföring och fler konverteringar</h2>
+		<div class="unit golden-large">
+			<p>
+				Vi kan hjälpa till med utvärderingar av hemsidan baserade på statistik från till exempel google analytics, kodstruktur eller användargenomgångar. Dessa analyser användas som grund för att optimera hemsidan för fler konverteringar, sökmotoranpassningar (SEO), content marketing strategi eller tillgänglighetsanpassningar. Rapporten ni får innehåller konkreta förslag på hur sidan kan optimeras. 
+
+				Grundtjänst Rapport av medelstor webbsajt med inriktning på en av följande: konverteringar, sökmotorsoptimeringar, content marketing eller tillgänglighet. Med en genomgång av rapporten. 4995 Kr
+			</p>
+			<a href="mailto:contact@restfuldesign.com?subject=Analyser%20-%20Intresseanmälan" class="call-to-action green pull-right">Skicka Intresseanmälan</a>
+		</div>
+		<div class="unit golden-small web-dev-keywords">
+			<img src="dist/img/rapporter.png" style="width:100%" alt="Web Dev Keywords">
+		</div>
+	</div>
+</section>
+<section class="shopify more-padding-top more-padding-bottom">
+	<div class="grid content">
+		<h2 class="align-center">E-handel - Webbutik med Shopify</h2>
+		<div class="unit whole">
+			<img src="dist/img/shopify-logo-grey.png" class="float-center space-top more-padding-bottom" alt="shopify logo">	
+			<p>
+				Shopify är en e-handelsplattform som vi valt att jobba mot då den är väldigt enkelt att komma igång med samtidigt som den är flexibel och möter de flesta krav som e-handlare har. Se nedan för våra tre Shopify tjänster:
+			</p>
+      <div class="one-third space-bottom space-top wow slideInLeft align-center" data-wow-delay=".4s">
+				<div class="border">
+					<div class="head">
+		        <p>Freemium</p>
+		        <h3 class="bold">Gratis</h3>
+					</div>
+					<ul class="align-left">
+	          <li>Vi sätter upp ett gratis testkonto på Shopify</li>
+	          <li>Dokumentationssamling kring lagar och skatter</li>
+	          <li>Inga förbindelser</li>
+	        </ul>
+				</div>
+      </div>
+      <div class="one-third space-bottom space-top wow slideInUp align-center">
+				<div class="border">
+					<div class="head">       
+		        <p>Lansering</p>
+						<h3 class="bold">4995 Kr</h3>
+					</div>
+					<ul class="align-left">
+	          <li>Webshop med Shopify</li>
+	          <li>Val av tema samt anpassningar</li>
+	          <li>Hjälper till med innehållet</li>
+	          <li>Konfigurerar ert domännamn</li>
+	          <li>Råd och EU-anpassningar</li>
+	          <li>Ser till att ni kommer igång</li>
+	        </ul>
+				</div>
+      </div>
+      <div class="one-third space-bottom space-top wow slideInRight align-center" data-wow-delay=".4s">
+				<div class="border">
+					<div class="head">
+		        <p>Utveckling</p>
+		        <h3 class="bold">Offert</h3>
+					</div>       
+					<ul class="align-left">
+	          <li>Unikt utseende på webshoppen</li>
+	          <li>Egen funktionalitet</li>
+	          <li>Systemintegrationer</li>
+	          <li>Import/Export av data</li>
+	          <li>Mjukvarulicenser</li>
+	        </ul>
+				</div>
+    	</div>
+		</div>
+	</div>
 </section>
 <section class="footer">
 	<div id="name">
