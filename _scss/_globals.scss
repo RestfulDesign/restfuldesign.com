@@ -12,55 +12,55 @@ $white:							#f4f4f4;
 $blue:							#08c;
 
 .border {
-	border: $border;
+  border: $border;
 }
 .less-padding-top {
-	padding-top: $less-padding !important;
+  padding-top: $less-padding !important;
 }
 .less-padding-bottom {
-	padding-bottom: $less-padding !important;
+  padding-bottom: $less-padding !important;
 }
 .padding-top, .space-top {
-	padding-top: $padding !important;
+  padding-top: $padding !important;
 }
 .padding-right, .space-right {
-	padding-right: $padding !important;
+  padding-right: $padding !important;
 }
 .padding-bottom, .space-bottom {
-	padding-bottom: $padding !important;
+  padding-bottom: $padding !important;
 }
 .padding-left, .space-left {
-	padding-left: $padding !important;
+  padding-left: $padding !important;
 }
 .more-padding-top, .extra-space-top {
-	padding-top: $extra-padding;
+  padding-top: $extra-padding;
 }
 .more-padding-bottom, .extra-space-bottom {
-	padding-bottom: $extra-padding;
+  padding-bottom: $extra-padding;
 }
 .content {
-	margin-left: auto;
-	margin-right: auto;
-	width: 90%;
-	max-width: 1111px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 1111px;
 }
 .leading {
-	font-size: 2.1em;
-	line-height: 1.5;
-	max-width: 60%;
-	display: block;
+  font-size: 2.1em;
+  line-height: 1.5;
+  max-width: 60%;
+  display: block;
 }
 .justify {
-	text-align: justify;
+  text-align: justify;
 }
 .block {
-	display: block;
+  display: block;
 }
 .float-center {
-	display: block;
-	float: none;
-	margin-left: auto;
-	margin-right: auto;
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 .align-center { text-align: center; }
 .align-left   { text-align: left; }
@@ -73,18 +73,18 @@ $blue:							#08c;
 /* Buttons */
 
 .call-to-action {
-	display: inline-block;
-	margin: $padding $padding;
-	padding: 1em $padding;
-	border: 2px solid #fafafa;
-	text-decoration: none;
-	border-radius: 25px;
+  display: inline-block;
+  margin: $padding $padding;
+  padding: 1em $padding;
+  border: 2px solid #fafafa;
+  text-decoration: none;
+  border-radius: 25px;
 }
 .call-to-action:hover {
-	padding: 1em 2em;
-	border: 2px solid $green;
+  padding: 1em 2em;
+  border: 2px solid $green;
 }
 .green {
-	background-color: $green;
-	color: $white;
+  background-color: $green;
+  color: $white;
 }

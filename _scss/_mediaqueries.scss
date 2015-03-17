@@ -1,14 +1,14 @@
 /*
- * Mediaqueries	
+ * Mediaqueries
  */
 
 @media screen and (min-width: 34em) {
-	h1 {
-		font-size: 3.6em;
-	}
-	h2 {
-		font-size: 29px;
-	}
+  h1 {
+    font-size: 3.6em;
+  }
+  h2 {
+    font-size: 29px;
+  }
 }
 @media screen and (max-width: 768px) {
   .grid .unit {
@@ -20,87 +20,87 @@
     padding-left: 0px;
     padding-right: 0px;
   }
-	.portfolio img {
-		position: relative;
-		display: block;
-		margin: 0 auto;
-	}
+  .portfolio img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+  }
 }
 @media screen and (min-width: 52em) {
-	h1 {
-		font-size: 4.8em;
-	}
-	h2 {
-		font-size: 29px;
-	}
+  h1 {
+    font-size: 4.8em;
+  }
+  h2 {
+    font-size: 29px;
+  }
 
-	.nav img.logo {
-		float: left;
-	}
-	.nav ul {
-		width: initial;
-		float: right;
-		margin: 0 -10px 0 0;
-	}
-	.nav li {
+  .nav img.logo {
+    float: left;
+  }
+  .nav ul {
+    width: initial;
+    float: right;
+    margin: 0 -10px 0 0;
+  }
+  .nav li {
     vertical-align: middle;
     float: left;
-		width: initial;
-	}
-	.nav li a{
+    width: initial;
+  }
+  .nav li a{
 
-	}
-	#services {
+  }
+  #services {
 /*		width: 90%;*/
-		margin: 2em auto;
-		> div {
+    margin: 2em auto;
+    > div {
 /*			width: 33%;
-			float: left;*/
-			> p {
-				font-size: 1.8em;
-			}
-		}
-	}
+      float: left;*/
+      > p {
+        font-size: 1.8em;
+      }
+    }
+  }
 }
 @media screen and (min-width: 72em) {
-	h1 {
-		font-size: 6.4em;
-	}
-	h2 {
-		font-size: 36px;
-	}
-	h3 {
-		font-size: 2.7em;
-	}
-	/*#services {
-		width: 90%;
-		margin: 2em auto;
-		> div {
-			width: 33%;
-			float: left;
-			> div {
-				width: 100px;
-				height: 100px;
-			}
-			> p {
-				font-size: 1.8em;
-			}
-		}
-	}*/
+  h1 {
+    font-size: 6.4em;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 2.7em;
+  }
+  /*#services {
+    width: 90%;
+    margin: 2em auto;
+    > div {
+      width: 33%;
+      float: left;
+      > div {
+        width: 100px;
+        height: 100px;
+      }
+      > p {
+        font-size: 1.8em;
+      }
+    }
+  }*/
 }
 @media screen and (min-width: 92em) {
-	h1 {
-		font-size: 64px;
-	}
-	h2 {
-		font-size: 48px;
-	}
+  h1 {
+    font-size: 64px;
+  }
+  h2 {
+    font-size: 48px;
+  }
 }
 
 
 
 /*@media screen and (max-width: 34em) {
-	h1 {
-		font-size: 56px;
-	}
+  h1 {
+    font-size: 56px;
+  }
 }*/
