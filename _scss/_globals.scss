@@ -1,5 +1,6 @@
-$prim-font-stack:		'Helvetica Neue', Arial, sans-serif; /*Georgia, serif;*/
-$sec-font-stack:		'Open Sans', Inconsolata, arial, sans-serif;
+$prim-font-stack:		'Roboto', 'Helvetica Neue', Arial, sans-serif; /*Georgia, serif;*/
+$sec-font-stack:		'Roboto', 'Open Sans', Inconsolata, arial, sans-serif;
+$line-height:       1.6;
 $header-bg-color: 	#fbfbfb;
 $link-color:				#65C7FD;
 $grey:							#7b7c7c;
@@ -13,6 +14,9 @@ $blue:							#08c;
 
 .border {
   border: $border;
+}
+.margin-top {
+  margin-top: 1em;
 }
 .less-padding-top {
   padding-top: $less-padding !important;
@@ -34,6 +38,9 @@ $blue:							#08c;
 }
 .more-padding-top, .extra-space-top {
   padding-top: $extra-padding;
+}
+.more-padding-right, .extra-space-right {
+  padding-right: $extra-padding;
 }
 .more-padding-bottom, .extra-space-bottom {
   padding-bottom: $extra-padding;
@@ -72,6 +79,14 @@ $blue:							#08c;
 
 /* Buttons */
 
+.border-buttom {
+  border: 1px solid #65c7fd;
+  text-decoration: none;
+  padding: 9px 18px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
 .call-to-action {
   display: inline-block;
   margin: $padding $padding;
@@ -87,4 +102,7 @@ $blue:							#08c;
 .green {
   background-color: $green;
   color: $white;
+}
+.grey {
+  color: $grey;
 }
