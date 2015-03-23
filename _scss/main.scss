@@ -1,6 +1,7 @@
 @import "gridism";
 @import "globals";
-@import "base64";
+@import "mediaqueries";
+/*@import "base64";*/
 @import "header";
 @import "nav";
 @import "services";
@@ -36,14 +37,13 @@ h1, h2, h3 {
   -webkit-font-smoothing: antialiased;
 }
 h1 {
-  padding-top: 1em;
-  font-size: 2.6em;
-  color: #4d4d4d;
+/*  font-size: 2.6em;*/
+  color: #333;
   clear: both;
 }
 h2 {
 /*  font-size: 21px;*/
-  color: #111;
+  color: #444;
 }
 h3 {
   font-size: 2.6em;
@@ -61,4 +61,3 @@ p {
   color: #666;
   margin-bottom: 1em;
 }
-@import "mediaqueries";

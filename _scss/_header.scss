@@ -3,19 +3,13 @@
   margin: 0 auto;
   padding-top: $padding;
   background-color: $header-bg-color;
-  background: $header-bg-color url('img/gradient-noise.jpg') no-repeat center center;
-  /*http://angrytools.com/gradient/image.php?0_ffffff,100_ffdda0&0_68,100_100&l_300|0_ffffff,100_ff00ff&0_0,100_100&l_212|0_00ffff,100_800080&0_75,71_100&r_56*/
+  background: $header-bg-color url('img/gradient-poly.svg') no-repeat center center;
+  background-size: cover; /*http://angrytools.com/gradient/image.php?0_ffffff,100_ffdda0&0_68,100_100&l_300|0_ffffff,100_ff00ff&0_0,100_100&l_212|0_00ffff,100_800080&0_75,71_100&r_56*/
   /*http://angrytools.com/gradient/image.php?0_ffffff,100_ffdda0&0_54,100_100&l_35|0_ffffff,100_ff00ff&0_0,100_100&l_212|0_00ffff,100_800080&0_75,71_100&r_56*/
-
-
-  background-size: cover;
-}
-.header picture {
-  margin-top: 4em;
 }
 .picture img {
   display: block;
-  margin: 4em auto 0;
+  margin: 0 auto;
 }
 .header .show-more-arrow {
   display: block;

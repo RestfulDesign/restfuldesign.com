@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="233px" height="234px" viewBox="0 0 233 234" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8054) - http://www.bohemiancoding.com/sketch -->
+    <title>Bottom path + Middle triangle + top path</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Bottom-path-+-Middle-triangle-+-top-path" sketch:type="MSLayerGroup">
+            <path d="M49.5558472,149.468079 L0,198.952877 L0,209.993901 C0,223.252103 10.7514977,234 24.0030821,234 L208.996918,234 C222.253454,234 233,223.258789 233,209.997723 L233,99.0916941 L115.961182,216.075504 L49.5558472,149.468079 Z" id="Bottom-path" fill="#EB5633" sketch:type="MSShapeGroup"></path>
+            <path d="M82.9998779,116.068848 L49.5558472,149.460999 L83.1542969,183.092773 L82.9998779,116.068848 Z" id="Middle-triangle" fill="#F19833" sketch:type="MSShapeGroup"></path>
+            <path d="M24.0030821,0 C10.7465459,0 0,10.7507705 0,24.0059348 L0,133.093704 L48.6066818,83.8477325 L115.225166,149.682083 L233,32.3129005 L233,23.9915257 C233,10.741372 222.248502,0 208.996918,0 L24.0030821,0 Z" id="top-path" fill="#F19833" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

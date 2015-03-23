@@ -2,12 +2,14 @@ $prim-font-stack:		'Roboto', 'Helvetica Neue', Arial, sans-serif; /*Georgia, ser
 $sec-font-stack:		'Roboto', 'Open Sans', Inconsolata, arial, sans-serif;
 $line-height:       1.6;
 $header-bg-color: 	#fbfbfb;
-$link-color:				#65C7FD;
+$link-color:        #65C7FD;
 $grey:							#7b7c7c;
 $border: 						1px solid #ddd;
 $less-padding:			1em;
 $padding:						2em;
-$extra-padding:			4em;
+$margin:            2em;
+$more-margin:       5em;
+$extra-padding:			5em;
 $green:							rgba(104, 166, 52, .95);
 $white:							#f4f4f4;
 $blue:							#08c;
@@ -15,9 +17,36 @@ $blue:							#08c;
 .border {
   border: $border;
 }
+/* margins */
 .margin-top {
-  margin-top: 1em;
+  margin-top: $margin;
 }
+.margin-right {
+  margin-right: $margin;
+}
+  
+.margin-bottom {
+  margin-bottom: $margin;
+}
+.margin-left {
+  margin-left: $margin;
+}
+.more-margin-top {
+  margin-top: $more-margin;
+}
+.more-margin-right {
+  margin-right: $more-margin;
+}
+  
+.more-margin-bottom {
+  margin-bottom: $more-margin;
+}
+.more-margin-left {
+  margin-left: $more-margin;
+}
+
+
+/* paddings */
 .less-padding-top {
   padding-top: $less-padding !important;
 }
