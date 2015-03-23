@@ -220,7 +220,7 @@ header a.show-more-arrow:hover {
   margin: 0 auto;
   padding-top: 2em;
   background-color: #fbfbfb;
-  background: #fbfbfb url('img/gradient-2.jpg') no-repeat center center;
+  background: #fbfbfb url('img/gradient-noise.jpg') no-repeat center center;
   /*http://angrytools.com/gradient/image.php?0_ffffff,100_ffdda0&0_68,100_100&l_300|0_ffffff,100_ff00ff&0_0,100_100&l_212|0_00ffff,100_800080&0_75,71_100&r_56*/
   /*http://angrytools.com/gradient/image.php?0_ffffff,100_ffdda0&0_54,100_100&l_35|0_ffffff,100_ff00ff&0_0,100_100&l_212|0_00ffff,100_800080&0_75,71_100&r_56*/
   background-size: cover; }
