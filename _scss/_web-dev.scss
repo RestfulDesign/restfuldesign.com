@@ -8,11 +8,11 @@
   background-repeat: repeat-x;
   background-size: 4438px;
   background-position: 0px 0px;      
-  -webkit-animation: slide 40s linear infinite;
-     -moz-animation: slide 40s linear infinite;
-      -ms-animation: slide 40s linear infinite;
-       -o-animation: slide 40s linear infinite;
-          animation: slide 40s linear infinite;
+  -webkit-animation: slide 80s linear infinite;
+     -moz-animation: slide 80s linear infinite;
+      -ms-animation: slide 80s linear infinite;
+       -o-animation: slide 80s linear infinite;
+          animation: slide 80s linear infinite;
   -webkit-transform: translateZ(0);
      -moz-transform: translateZ(0);
       -ms-transform: translateZ(0);
@@ -20,6 +20,18 @@
           transform: translateZ(0);
 } 
 @-webkit-keyframes slide {
+  from { background-position: 0 0; }
+  to { background-position: -4438px 0; }
+}
+@-moz-keyframes slide {
+  from { background-position: 0 0; }
+  to { background-position: -4438px 0; }
+}
+@-ms-keyframes slide {
+  from { background-position: 0 0; }
+  to { background-position: -4438px 0; }
+}
+@keyframes slide {
   from { background-position: 0 0; }
   to { background-position: -4438px 0; }
 }

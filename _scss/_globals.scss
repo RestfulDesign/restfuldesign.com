@@ -1,5 +1,5 @@
-$prim-font-stack:		'Roboto', 'Helvetica Neue', Arial, sans-serif; /*Georgia, serif;*/
-$sec-font-stack:		'Roboto', 'Open Sans', Inconsolata, arial, sans-serif;
+$prim-font-stack:		'Roboto', 'Helvetica Neue', Arial, sans-serif;
+$sec-font-stack:		$prim-font-stack;
 $line-height:       1.6;
 $header-bg-color: 	#fbfbfb;
 $link-color:        #65C7FD;
@@ -105,10 +105,12 @@ $blue:							#08c;
 .pull-right   { float: right; }
 .uppercase	  { text-transform: uppercase; }
 .bold					{ font-weight: bold;}
+.inline-block { display: inline-block; }
+.list-unstyled{ list-style: none;}
 
 /* Buttons */
 
-.border-buttom {
+.border-button {
   border: 1px solid #65c7fd;
   text-decoration: none;
   padding: 9px 18px;

@@ -26,9 +26,10 @@ html, body {
 html {
   box-sizing: border-box;
   position: relative;
+  font-size: 62.5%;
 }
 body {
-  font: 62.5% $prim-font-stack;
+  font-family: $prim-font-stack;
   line-height: 1.43;
 }
 h1, h2, h3 {
@@ -46,16 +47,16 @@ h2 {
   color: #444;
 }
 h3 {
-  font-size: 2.6em;
+  font-size: 2.6rem;
 }
 a {
-  font-size: 1.4em;
+  font-size: 1.4rem;
   color: $link-color;
   font-family: $sec-font-stack;
 }
 p {
   font-family: $sec-font-stack;
-  font-size: 1.8em;
+  font-size: 1.8rem;
   font-weight: 300;
   line-height: $line-height;
   color: #666;
