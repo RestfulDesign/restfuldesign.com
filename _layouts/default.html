@@ -9,10 +9,10 @@
       /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
       function loadJS(e,t){"use strict";var n=window.document.getElementsByTagName("script")[0],o=window.document.createElement("script");return o.src=e,o.async=!0,n.parentNode.insertBefore(o,n),t&&"function"==typeof t&&(o.onload=t),o}
       // load assets
-      loadCSS( "/dist/main.css" );
-      loadJS( "/dist/all.min.js" );
+      loadCSS( "dist/main.css" );
+      loadJS( "dist/all.min.js" );
     </script>
-    <noscript><link href="/dist/main.css" rel="stylesheet"></noscript>
+    <noscript><link href="dist/main.css" rel="stylesheet"></noscript>
     <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
     <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
     <title>{{ page.title }}</title>
