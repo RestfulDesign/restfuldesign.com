@@ -105,11 +105,11 @@ h2{font-size:48px}}
 .services ul{margin-top:2em;margin-bottom:3em}
 .services li{font-size:1.8em;color:#666;line-height:1.8;font-style:italic}
 .design{min-height:100px}
+.footer,.portfolio .grid{min-height:480px}
 .portfolio a{font-size:1.7em}
 .portfolio ul,.shopify li{font-size:1.6em}
 .left-pos{left:2em}
 .right-pos{right:2em}
-.portfolio .grid{min-height:480px}
 .the-team{background:url(img/stockholm-white.jpg)center center no-repeat #fbfbfb;background-size:cover}
 .the-team img{width:17em;height:auto;border-radius:50%;padding:5px;background-color:#fff}
 .web-dev p{max-width:24em}
