@@ -384,8 +384,6 @@
   text-decoration: none;
   letter-spacing: 1px;
   text-transform: capitalize;
-  /*  color: aliceblue;*/
-  font-size: 1.6em;
   font-weight: 300;
   padding: 10px;
   border-radius: 3px; }
@@ -3172,7 +3170,7 @@ h3 {
   font-size: 2.6rem; }
 
 a {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #65C7FD;
   font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif; }
 
