@@ -13,7 +13,7 @@ var messages = {
 };
 
 var paths = {
-  scripts: ['src/**/*.js', 'src/*.js']
+  scripts: ['src/plugins/*.js', 'src/*.js']
 };
 
 /**
