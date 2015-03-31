@@ -393,8 +393,7 @@
   transition: background 0.5s ease; }
 
 #services {
-  width: 100%;
-  text-align: center; }
+  width: 100%; }
   #services .img-wrapper {
     height: 100px; }
   #services img {
@@ -515,7 +514,8 @@
   height: 480px; }
 
 .quotes {
-  min-height: 160px; }
+  min-height: 160px;
+  font-style: italic; }
 
 blockquote {
   opacity: 1;

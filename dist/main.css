@@ -73,7 +73,6 @@ h2{font-size:29px}}
 .unit .grid .unit{padding-left:0;padding-right:0}
 .align-right{text-align:left}
 .portfolio img{position:relative;display:block;margin:0 auto}}
-#services,.nav li,.services li{text-align:center}
 @media screen and (min-width:52em){h1{font-size:4.8em}
 h2{font-size:29px}
 .nav img.logo{float:left}
@@ -95,7 +94,7 @@ h2{font-size:48px}}
 .nav .content{padding-top:1em}
 .nav img.logo{margin:0 auto;display:block}
 .nav ul{padding:0;margin:0 auto;display:block}
-.nav li{float:left;width:25%}
+.nav li{float:left;width:25%;text-align:center}
 #services,.portfolio img{width:100%}
 .nav a{letter-spacing:1px;text-transform:capitalize;padding:10px;border-radius:3px}
 .nav a:hover{background-color:rgba(255,255,255,.25);transition:background .5s ease}
@@ -104,7 +103,7 @@ h2{font-size:48px}}
 #services p{color:#7b7c7c}
 .services h2{padding:2em 0 1em;font-size:3.1em}
 .services ul{margin-top:2em;margin-bottom:3em}
-.services li{font-size:1.8em;color:#666;line-height:1.8;font-style:italic}
+.services li{text-align:center;font-size:1.8em;color:#666;line-height:1.8;font-style:italic}
 .design{min-height:100px}
 .portfolio a{font-size:1.7em}
 .portfolio ul,.shopify li{font-size:1.6em}
@@ -124,7 +123,7 @@ to{background-position:-4438px 0}}
 .shopify .border{height:100%}
 .shopify li{padding:.5em 1em}
 .shopify .one-third{float:left;width:33%;height:480px}
-.quotes{min-height:160px}
+.quotes{min-height:160px;font-style:italic}
 blockquote{opacity:1;position:absolute;transition:all 2s;width:90%}
 blockquote.t{opacity:0}
 blockquote span{height:48px}
