@@ -1,8 +1,7 @@
-.border-button,.call-to-action,.nav a{text-decoration:none}
-.list-unstyled,.nav li,.services li{list-style:none}
-.nav ul,.portfolio{overflow:hidden}
-.portfolio li,.shopify li{list-style-position:inside}
-.grid .unit,html{position:relative}
+.border-button,.call-to-action,nav a{text-decoration:none}
+.portfolio,nav ul{overflow:hidden}
+.list-unstyled,.services li,.shopify li,nav li{list-style:none}
+.grid .unit,.quotes,html{position:relative}
 .grid,.unit,html{box-sizing:border-box}
 .grid,.grid:after,h1{clear:both}
 a,body,p{font-family:Roboto,'Helvetica Neue',Arial,sans-serif}
@@ -50,7 +49,7 @@ a,body,p{font-family:Roboto,'Helvetica Neue',Arial,sans-serif}
 .extra-space-right,.more-padding-right{padding-right:6em}
 .extra-space-bottom,.more-padding-bottom{padding-bottom:6em}
 .content{width:90%;max-width:1111px}
-.leading{font-size:2.1em;line-height:1.5;max-width:60%}
+.leading{font-size:2.1em;line-height:1.5;max-width:70%}
 .justify{text-align:justify}
 .float-center{float:none}
 .call-to-action,.inline-block{display:inline-block}
@@ -61,43 +60,26 @@ a,body,p{font-family:Roboto,'Helvetica Neue',Arial,sans-serif}
 .pull-right{float:right}
 .uppercase{text-transform:uppercase}
 .bold{font-weight:700}
-.nav a,h1,h2,h3,p{font-weight:300}
+h1,h2,h3,h4,nav a,p{font-weight:300}
 .border-button{border:1px solid #65c7fd;padding:9px 18px;border-radius:30px}
 .call-to-action{margin:2em;padding:1em 2em;border:2px solid #fafafa;border-radius:25px}
 .call-to-action:hover{padding:1em 2em;border:2px solid rgba(104,166,52,.95)}
 .green{background-color:rgba(104,166,52,.95);color:#f4f4f4}
 .grey{color:#7b7c7c}
-@media screen and (min-width:34em){h1{font-size:3.6em}
-h2{font-size:29px}}
-@media screen and (max-width:768px){.grid .unit{width:100%!important;padding-left:20px;padding-right:20px}
-.unit .grid .unit{padding-left:0;padding-right:0}
-.align-right{text-align:left}
-.portfolio img{position:relative;display:block;margin:0 auto}}
-@media screen and (min-width:52em){h1{font-size:4.8em}
-h2{font-size:29px}
-.nav img.logo{float:left}
-.nav ul{width:initial;float:right;margin:0 -10px 0 0}
-.nav li{vertical-align:middle;float:left;width:initial}
-#services{margin:2em auto}
-#services>div>p{font-size:1.8em}}
-@media screen and (min-width:72em){h1{font-size:6.4em}
-h2{font-size:36px}
-h3{font-size:2.7em}}
-@media screen and (min-width:92em){h1{font-size:64px}
-h2{font-size:48px}}
 .header{width:100%;margin:0 auto;padding-top:2em;background:url(img/gradient-sand-tint-poly.svg)center center no-repeat #fbfbfb;background-size:cover}
 .picture img{display:block;margin:0 auto}
 .header .show-more-arrow{display:block;margin:2em auto 0;width:60px;height:80px;font-size:12px;text-align:center;color:#c3c2c2;fill:#00f}
 .header .show-more-arrow img{margin-top:5px}
-.nav{-webkit-backface-visibility:hidden;top:0;left:0;width:100%;height:60px;z-index:2;line-height:50px}
-.nav .fixed{background:#fefefe}
-.nav .content{padding-top:1em}
-.nav img.logo{margin:0 auto;display:block}
-.nav ul{padding:0;margin:0 auto;display:block}
-.nav li{float:left;width:25%;text-align:center}
+nav{position:fixed;-webkit-backface-visibility:hidden;top:0;left:0;width:100%;height:65px;z-index:2;line-height:50px;transition:background-color .5s linear}
+nav.fixed{background:#fefefe;background:rgba(254,254,254,.97);border-bottom:1px solid rgba(221,221,221,.5)}
+.shopify .head,nav.fixed{border-bottom:1px solid #ddd}
+nav .content{padding-top:1em}
+nav img.logo{margin:0 auto;display:block}
+nav ul{padding:0;margin:0 auto;display:block}
+nav li{float:left;width:25%;text-align:center}
 #services,.portfolio img{width:100%}
-.nav a{letter-spacing:1px;text-transform:capitalize;padding:10px;border-radius:3px}
-.nav a:hover{background-color:rgba(255,255,255,.25);transition:background .5s ease}
+nav a{letter-spacing:1px;text-transform:capitalize;padding:10px;border-radius:3px}
+nav a:hover{background-color:rgba(255,255,255,.25);transition:background .5s ease}
 #services .img-wrapper{height:100px}
 #services img{display:block;max-width:80px;margin:3em auto}
 #services p{color:#7b7c7c}
@@ -109,27 +91,30 @@ h2{font-size:48px}}
 .portfolio ul,.shopify li{font-size:1.6em}
 .left-pos{left:2em}
 .right-pos{right:2em}
+.portfolio li{list-style-position:inside}
 .the-team{background:url(img/stockholm-white.jpg)center center no-repeat #fbfbfb;background-size:cover}
 .the-team img{width:17em;height:auto;border-radius:50%;padding:5px;background-color:#fff}
 .web-dev p{max-width:24em}
-.tech-logos{width:100%;height:512px;background:url(img/tech-logos.svg)repeat-x;background-size:4438px;-webkit-animation:slide 80s linear infinite;-ms-animation:slide 80s linear infinite;animation:slide 80s linear infinite;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0)}
+.tech-logos{width:100%;height:512px;background:url(img/tech-logos.svg)repeat-x;background-size:4438px;-webkit-transform:translateZ(0);transform:translateZ(0)}
 @-webkit-keyframes slide{from{background-position:0 0}
 to{background-position:-4438px 0}}
 @-ms-keyframes slide{from{background-position:0 0}
 to{background-position:-4438px 0}}
 @keyframes slide{from{background-position:0 0}
 to{background-position:-4438px 0}}
-.shopify .head{background-color:#08c;color:#f4f4f4;padding:2em 0}
-.shopify .border{height:100%}
-.shopify li{padding:.5em 1em}
-.shopify .one-third{float:left;width:33%;height:480px}
+.shopify .head{padding:2em 0}
+.shopify img{width:300px}
+.shopify .border{border-top:none;border-bottom:none}
+.shopify ul{min-height:250px}
+.shopify li{padding:.5em 1.5em}
+.shopify .one-third{float:left;width:33%}
 .quotes{min-height:160px;font-style:italic}
 blockquote{opacity:1;position:absolute;transition:all 2s;width:90%}
 blockquote.t{opacity:0}
 blockquote span{height:48px}
 blockquote i{line-height:48px;vertical-align:top}
 blockquote img{width:48px;height:48px;border-radius:50%;margin-right:1em}
-.quote-progress{background:#F5F2EA;height:3px;width:100%;display:block;-webkit-animation:progress 15s infinite;animation:progress 15s infinite}
+.quote-progress{background:#F5F2EA;height:3px;width:100%;display:block;-webkit-animation:progress 15s infinite linear;animation:progress 15s infinite linear}
 @-webkit-keyframes progress{from{width:0}
 to{width:100%}}
 @keyframes progress{from{width:0}
@@ -627,14 +612,38 @@ Copyright (c) 2014 Daniel Eden
 @keyframes slideOutUp{0%{-webkit-transform:translateY(0);transform:translateY(0)}
 100%{visibility:hidden;-webkit-transform:translateY(-100%);transform:translateY(-100%)}}
 .slideOutUp{-webkit-animation-name:slideOutUp;animation-name:slideOutUp}
+@media screen and (min-width:34em){h1{font-size:3.6em}
+h2{font-size:29px}}
+@media screen and (max-width:768px){.grid .unit{width:100%!important;padding-left:20px;padding-right:20px}
+.unit .grid .unit{padding-left:0;padding-right:0}
+.align-right{text-align:left}
+.portfolio img{position:relative;display:block;margin:0 auto}
+.shopify .one-third{float:none;width:100%}
+.shopify ul{min-height:0}
+.shopify li{text-align:center}
+.shopify .border{border:none}}
+@media screen and (min-width:52em){nav li,nav ul{width:initial}
+h1{font-size:4.8em}
+h2{font-size:29px}
+nav img.logo{float:left}
+nav ul{float:right;margin:0 -10px 0 0}
+nav li{vertical-align:middle;float:left}
+#services{margin:2em auto}
+#services>div>p{font-size:1.8em}}
+h4,p{font-size:1.8rem}
+@media screen and (min-width:72em){h1{font-size:6.4em}
+h2{font-size:36px}
+h3{font-size:2.7em}}
+@media screen and (min-width:92em){h1{font-size:64px}
+h2{font-size:48px}}
 *{margin:0;padding:0}
 *,:after,:before{box-sizing:inherit}
 body,html{width:100%;height:100%}
 html{font-size:62.5%}
 body{line-height:1.43}
-h1,h2,h3{line-height:1.3;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{line-height:1.3;-webkit-font-smoothing:antialiased}
 h1{color:#333}
 h2{color:#444}
 h3{font-size:2.6rem}
 a{font-size:1.6rem;color:#65C7FD}
-p{font-size:1.8rem;line-height:1.6;color:#666;margin-bottom:1em}
+p{line-height:1.6;color:#666;margin-bottom:1em}

@@ -1,6 +1,5 @@
 @import "gridism";
 @import "globals";
-@import "mediaqueries";
 /*@import "base64";*/
 @import "header";
 @import "nav";
@@ -12,6 +11,7 @@
 @import "quotes";
 @import "animate";
 @import "footer";
+@import "mediaqueries";
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +32,7 @@ body {
   font-family: $prim-font-stack;
   line-height: 1.43;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-weight: 300;
   line-height: 1.3;
   -webkit-font-smoothing: antialiased;
@@ -48,6 +48,9 @@ h2 {
 }
 h3 {
   font-size: 2.6rem;
+}
+h4 {
+  font-size: 1.8rem;
 }
 a {
   font-size: 1.6rem;

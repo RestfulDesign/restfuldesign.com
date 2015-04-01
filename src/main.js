@@ -12,8 +12,21 @@ var Carousel = function(e,s,c,m,i) {
     setInterval(f,s);
 }
 window.addEventListener('load', function() {
-  var qoutes = getChildrenOf('quotes');
+  var qoutes = getChildrenOf('quotes'),
+      topNav = document.getElementById("nav");
+  
   Carousel(qoutes, 15000, 0);
+  
+  // On scroll actions
+  window.onscroll = function() {
+    var y = window.pageYOffset || document.documentElement.scrollTop;
+    if (y > 20) {
+      topNav.className = "fixed"; 
+    } else {      
+      topNav.className = "";      
+    }
+  } 
+
 }, false)
 
 function getChildrenOf(id) { 

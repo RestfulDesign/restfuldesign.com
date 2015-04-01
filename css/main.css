@@ -166,7 +166,7 @@
 .leading {
   font-size: 2.1em;
   line-height: 1.5;
-  max-width: 60%;
+  max-width: 70%;
   display: block; }
 
 .justify {
@@ -235,88 +235,6 @@
 .grey {
   color: #7b7c7c; }
 
-/*
- * Mediaqueries
- */
-@media screen and (min-width: 34em) {
-  h1 {
-    font-size: 3.6em; }
-  h2 {
-    font-size: 29px; } }
-
-@media screen and (max-width: 768px) {
-  .grid .unit {
-    width: 100% !important;
-    padding-left: 20px;
-    padding-right: 20px; }
-  .unit .grid .unit {
-    padding-left: 0px;
-    padding-right: 0px; }
-  .align-right {
-    text-align: left; }
-  .portfolio img {
-    position: relative;
-    display: block;
-    margin: 0 auto; } }
-
-@media screen and (min-width: 52em) {
-  h1 {
-    font-size: 4.8em; }
-  h2 {
-    font-size: 29px; }
-  .nav img.logo {
-    float: left; }
-  .nav ul {
-    width: initial;
-    float: right;
-    margin: 0 -10px 0 0; }
-  .nav li {
-    vertical-align: middle;
-    float: left;
-    width: initial; }
-  #services {
-    /*		width: 90%;*/
-    margin: 2em auto; }
-    #services > div {
-      /*			width: 33%;
-      float: left;*/ }
-      #services > div > p {
-        font-size: 1.8em; } }
-
-@media screen and (min-width: 72em) {
-  /*#services {
-    width: 90%;
-    margin: 2em auto;
-    > div {
-      width: 33%;
-      float: left;
-      > div {
-        width: 100px;
-        height: 100px;
-      }
-      > p {
-        font-size: 1.8em;
-      }
-    }
-  }*/
-  h1 {
-    font-size: 6.4em; }
-  h2 {
-    font-size: 36px; }
-  h3 {
-    font-size: 2.7em; } }
-
-@media screen and (min-width: 92em) {
-  h1 {
-    font-size: 64px; }
-  h2 {
-    font-size: 48px; } }
-
-/*@media screen and (max-width: 34em) {
-  h1 {
-    font-size: 56px;
-  }
-}*/
 /*@import "base64";*/
 .header {
   width: 100%;
@@ -347,40 +265,44 @@
 .header .show-more-arrow img {
   margin-top: 5px; }
 
-.nav {
-  /*	position: fixed;*/
+nav {
+  position: fixed;
   -webkit-backface-visibility: hidden;
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
+  height: 65px;
   z-index: 2;
-  line-height: 50px; }
+  line-height: 50px;
+  transition: background-color 0.5s linear; }
 
-.nav .fixed {
-  background: #fefefe; }
+nav.fixed {
+  background: #fefefe;
+  background: rgba(254, 254, 254, 0.97);
+  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.5); }
 
-.nav .content {
+nav .content {
   padding-top: 1em; }
 
-.nav img.logo {
+nav img.logo {
   margin: 0 auto;
   display: block; }
 
-.nav ul {
+nav ul {
   overflow: hidden;
   margin: 0;
   padding: 0;
   margin: 0 auto;
   display: block; }
 
-.nav li {
+nav li {
   list-style: none;
   float: left;
   width: 25%;
   text-align: center; }
 
-.nav a {
+nav a {
   text-decoration: none;
   letter-spacing: 1px;
   text-transform: capitalize;
@@ -388,7 +310,7 @@
   padding: 10px;
   border-radius: 3px; }
 
-.nav a:hover {
+nav a:hover {
   background-color: rgba(255, 255, 255, 0.25);
   transition: background 0.5s ease; }
 
@@ -467,12 +389,8 @@
   background-repeat: repeat-x;
   background-size: 4438px;
   background-position: 0px 0px;
-  -webkit-animation: slide 80s linear infinite;
-  -ms-animation: slide 80s linear infinite;
-  animation: slide 80s linear infinite;
   -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0); }
+          transform: translateZ(0); }
 
 @-webkit-keyframes slide {
   from {
@@ -496,26 +414,32 @@
     background-position: -4438px 0; } }
 
 .shopify .head {
-  background-color: #08c;
-  color: #f4f4f4;
-  padding: 2em 0; }
+  padding: 2em 0;
+  border-bottom: 1px solid #ddd; }
+
+.shopify img {
+  width: 300px; }
 
 .shopify .border {
-  height: 100%; }
+  border-top: none;
+  border-bottom: none; }
+
+.shopify ul {
+  min-height: 250px; }
 
 .shopify li {
-  list-style-position: inside;
-  padding: 0.5em 1em;
+  list-style: none;
+  padding: 0.5em 1.5em;
   font-size: 1.6em; }
 
 .shopify .one-third {
   float: left;
-  width: 33%;
-  height: 480px; }
+  width: 33%; }
 
 .quotes {
   min-height: 160px;
-  font-style: italic; }
+  font-style: italic;
+  position: relative; }
 
 blockquote {
   opacity: 1;
@@ -545,8 +469,8 @@ blockquote img {
   height: 3px;
   width: 100%;
   display: block;
-  -webkit-animation: progress 15s infinite;
-          animation: progress 15s infinite; }
+  -webkit-animation: progress 15s infinite linear;
+          animation: progress 15s infinite linear; }
 
 @-webkit-keyframes progress {
   from {
@@ -3070,6 +2994,97 @@ Copyright (c) 2014 Daniel Eden
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
+/*
+ * Mediaqueries
+ */
+@media screen and (min-width: 34em) {
+  h1 {
+    font-size: 3.6em; }
+  h2 {
+    font-size: 29px; } }
+
+@media screen and (max-width: 768px) {
+  .grid .unit {
+    width: 100% !important;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .unit .grid .unit {
+    padding-left: 0px;
+    padding-right: 0px; }
+  .align-right {
+    text-align: left; }
+  .portfolio img {
+    position: relative;
+    display: block;
+    margin: 0 auto; }
+  .shopify .one-third {
+    float: none;
+    width: 100%; }
+  .shopify ul {
+    min-height: 0; }
+  .shopify li {
+    text-align: center; }
+  .shopify .border {
+    border: none; } }
+
+@media screen and (min-width: 52em) {
+  h1 {
+    font-size: 4.8em; }
+  h2 {
+    font-size: 29px; }
+  nav img.logo {
+    float: left; }
+  nav ul {
+    width: initial;
+    float: right;
+    margin: 0 -10px 0 0; }
+  nav li {
+    vertical-align: middle;
+    float: left;
+    width: initial; }
+  #services {
+    /*		width: 90%;*/
+    margin: 2em auto; }
+    #services > div {
+      /*			width: 33%;
+      float: left;*/ }
+      #services > div > p {
+        font-size: 1.8em; } }
+
+@media screen and (min-width: 72em) {
+  /*#services {
+    width: 90%;
+    margin: 2em auto;
+    > div {
+      width: 33%;
+      float: left;
+      > div {
+        width: 100px;
+        height: 100px;
+      }
+      > p {
+        font-size: 1.8em;
+      }
+    }
+  }*/
+  h1 {
+    font-size: 6.4em; }
+  h2 {
+    font-size: 36px; }
+  h3 {
+    font-size: 2.7em; } }
+
+@media screen and (min-width: 92em) {
+  h1 {
+    font-size: 64px; }
+  h2 {
+    font-size: 48px; } }
+
+/*@media screen and (max-width: 34em) {
+  h1 {
+    font-size: 56px;
+  }
+}*/
 * {
   margin: 0;
   padding: 0; }
@@ -3090,7 +3105,7 @@ body {
   font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.43; }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-weight: 300;
   line-height: 1.3;
   -webkit-font-smoothing: antialiased; }
@@ -3106,6 +3121,9 @@ h2 {
 
 h3 {
   font-size: 2.6rem; }
+
+h4 {
+  font-size: 1.8rem; }
 
 a {
   font-size: 1.6rem;

@@ -1,15 +1,16 @@
 .quotes {
   min-height: 160px;
   font-style: italic;
+  position: relative;
 }
 blockquote {
-    opacity: 1;
-    position: absolute;
-    transition: all 2s;
-    width: 90%;
+  opacity: 1;
+  position: absolute;
+  transition: all 2s;
+  width: 90%;
 }
 blockquote.t {
-    opacity: 0;
+  opacity: 0;
 }
 blockquote span {
   height: 48px;
@@ -25,15 +26,15 @@ blockquote img {
   margin-right: 1em;
 }
 .quote-progress {
-    /*background: #00edc2;*/
-    background: #F5F2EA;
-    height: 3px;
-    width: 100%;
-    display: block;
-    animation: progress 15s infinite;
+  /*background: #00edc2;*/
+  background: #F5F2EA;
+  height: 3px;
+  width: 100%;
+  display: block;
+  animation: progress 15s infinite linear;
 }
 @keyframes progress {
-    from { width: 0%; }
-    to { width: 100%; }
+  from { width: 0%; }
+  to { width: 100%; }
 }
 

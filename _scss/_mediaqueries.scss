@@ -10,6 +10,7 @@
     font-size: 29px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .grid .unit {
     width: 100% !important;
@@ -28,6 +29,19 @@
     display: block;
     margin: 0 auto;
   }
+  .shopify .one-third {
+    float: none;
+    width: 100%;
+  }
+  .shopify ul {
+    min-height: 0;
+  }
+  .shopify li {
+    text-align: center;
+  }
+  .shopify .border {
+    border: none;
+  }
 }
 @media screen and (min-width: 52em) {
   h1 {
@@ -37,20 +51,20 @@
     font-size: 29px;
   }
 
-  .nav img.logo {
+  nav img.logo {
     float: left;
   }
-  .nav ul {
+  nav ul {
     width: initial;
     float: right;
     margin: 0 -10px 0 0;
   }
-  .nav li {
+  nav li {
     vertical-align: middle;
     float: left;
     width: initial;
   }
-  .nav li a{
+  nav li a{
 
   }
   #services {
