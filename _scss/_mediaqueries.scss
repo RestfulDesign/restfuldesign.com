@@ -38,9 +38,13 @@
   }
   .shopify li {
     text-align: center;
+    list-style-position: inside;
   }
   .shopify .border {
     border: none;
+  }
+  #nav { 
+    height: 112px;
   }
 }
 @media screen and (min-width: 52em) {
@@ -50,7 +54,6 @@
   h2 {
     font-size: 29px;
   }
-
   nav img.logo {
     float: left;
   }

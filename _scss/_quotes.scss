@@ -1,5 +1,5 @@
 .quotes {
-  min-height: 160px;
+  min-height: 200px;
   font-style: italic;
   position: relative;
 }
@@ -14,7 +14,8 @@ blockquote.t {
   opacity: 1;
   transition: opacity 2s;
 }
-blockquote span {
+blockquote p {
+  font-size: 2.1rem;
 }
 blockquote i {
   line-height: 48px;
@@ -27,7 +28,6 @@ blockquote img {
   margin-right: 1em;
 }
 .quote-progress {
-  /*background: #00edc2;*/
   background: #F5F2EA;
   width: 100%;
   display: block;

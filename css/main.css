@@ -233,7 +233,7 @@
   color: #f4f4f4; }
 
 .grey {
-  color: #7b7c7c; }
+  color: #F5F2EA; }
 
 /*@import "base64";*/
 .header {
@@ -243,7 +243,7 @@
   background-color: #fbfbfb;
   /*  background: $header-bg-color url('img/gradient-poly.svg') no-repeat center center;
 */
-  background: #fbfbfb url('img/gradient-sand-tint-poly.svg') no-repeat center center;
+  background: #fbfbfb url('img/gradient-grey-tint-poly.svg') no-repeat center center;
   background-size: cover;
   /*http://angrytools.com/gradient/image.php?0_ffffff,100_ffdda0&0_68,100_100&l_300|0_ffffff,100_ff00ff&0_0,100_100&l_212|0_00ffff,100_800080&0_75,71_100&r_56*/
   /*http://angrytools.com/gradient/image.php?0_ffffff,100_ffdda0&0_54,100_100&l_35|0_ffffff,100_ff00ff&0_0,100_100&l_212|0_00ffff,100_800080&0_75,71_100&r_56*/ }
@@ -279,8 +279,7 @@ nav {
 nav.fixed {
   background: #FBF9F4;
   background: rgba(251, 249, 244, 0.98);
-  border-bottom: 1px solid #ddd;
-  border-bottom: 1px solid rgba(221, 221, 221, 0.5); }
+  border-bottom: 1px solid #F5F2EA; }
 
 nav .content {
   padding-top: 1em; }
@@ -428,8 +427,9 @@ nav a:hover {
   min-height: 250px; }
 
 .shopify li {
-  list-style: none;
-  padding: 0.5em 1.5em;
+  list-style-image: url(./img/tick-green.svg);
+  padding: 0.5em 1.5em 0.5em 0;
+  margin-left: 3em;
   font-size: 1.6em; }
 
 .shopify .one-third {
@@ -437,7 +437,7 @@ nav a:hover {
   width: 33%; }
 
 .quotes {
-  min-height: 160px;
+  min-height: 200px;
   font-style: italic;
   position: relative; }
 
@@ -451,6 +451,9 @@ blockquote.t {
   opacity: 1;
   transition: opacity 2s; }
 
+blockquote p {
+  font-size: 2.1rem; }
+
 blockquote i {
   line-height: 48px;
   vertical-align: top; }
@@ -462,7 +465,6 @@ blockquote img {
   margin-right: 1em; }
 
 .quote-progress {
-  /*background: #00edc2;*/
   background: #F5F2EA;
   width: 100%;
   display: block;
@@ -3015,9 +3017,12 @@ Copyright (c) 2014 Daniel Eden
   .shopify ul {
     min-height: 0; }
   .shopify li {
-    text-align: center; }
+    text-align: center;
+    list-style-position: inside; }
   .shopify .border {
-    border: none; } }
+    border: none; }
+  #nav {
+    height: 112px; } }
 
 @media screen and (min-width: 52em) {
   h1 {

@@ -12,8 +12,8 @@ nav {
 nav.fixed {
   background: $light-yellow;
   background: rgba(251, 249, 244, 0.98);
-  border-bottom: 1px solid #ddd;
-  border-bottom: 1px solid rgba(221, 221, 221, 0.5);
+  border-bottom: 1px solid $grey;
+//  border-bottom: 1px solid rgba(221, 221, 221, 0.5);
 }
 nav .content {
   padding-top: 1em;

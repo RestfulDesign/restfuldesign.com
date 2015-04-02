@@ -15,8 +15,9 @@
   min-height: 250px;
 }
 .shopify li {
-  list-style: none;
-  padding: .5em 1.5em;
+  list-style-image: url(./img/tick-green.svg);
+  padding: .5em 1.5em .5em 0;
+  margin-left: 3em;
   font-size: 1.6em;
 }
 .shopify .one-third {
