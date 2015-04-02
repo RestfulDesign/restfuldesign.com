@@ -4,16 +4,17 @@
   position: relative;
 }
 blockquote {
-  opacity: 1;
+  opacity: 0;
   position: absolute;
-  transition: all 2s;
+  
   width: 90%;
+  overflow: hidden;
 }
 blockquote.t {
-  opacity: 0;
+  opacity: 1;
+  transition: opacity 2s;
 }
 blockquote span {
-  height: 48px;
 }
 blockquote i {
   line-height: 48px;
@@ -28,13 +29,19 @@ blockquote img {
 .quote-progress {
   /*background: #00edc2;*/
   background: #F5F2EA;
-  height: 3px;
   width: 100%;
   display: block;
-  animation: progress 15s infinite linear;
+  transform: translateX(-100%);
+  
+//  animation: progress 15s linear;
 }
-@keyframes progress {
-  from { width: 0%; }
-  to { width: 100%; }
+.t .quote-progress {
+  height: 3px;
+  transform: translateX(0%);
+  transition: transform 14s linear;
 }
+//@keyframes progress {
+//  from { transform: translateX(-100%);}
+//  to { transform: translateX(0%); }
+//}
 

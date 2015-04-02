@@ -277,8 +277,8 @@ nav {
   transition: background-color 0.5s linear; }
 
 nav.fixed {
-  background: #fefefe;
-  background: rgba(254, 254, 254, 0.97);
+  background: #FBF9F4;
+  background: rgba(251, 249, 244, 0.98);
   border-bottom: 1px solid #ddd;
   border-bottom: 1px solid rgba(221, 221, 221, 0.5); }
 
@@ -442,16 +442,14 @@ nav a:hover {
   position: relative; }
 
 blockquote {
-  opacity: 1;
+  opacity: 0;
   position: absolute;
-  transition: all 2s;
-  width: 90%; }
+  width: 90%;
+  overflow: hidden; }
 
 blockquote.t {
-  opacity: 0; }
-
-blockquote span {
-  height: 48px; }
+  opacity: 1;
+  transition: opacity 2s; }
 
 blockquote i {
   line-height: 48px;
@@ -466,25 +464,19 @@ blockquote img {
 .quote-progress {
   /*background: #00edc2;*/
   background: #F5F2EA;
-  height: 3px;
   width: 100%;
   display: block;
-  -webkit-animation: progress 15s infinite linear;
-          animation: progress 15s infinite linear; }
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%); }
 
-@-webkit-keyframes progress {
-  from {
-    width: 0%; }
-
-  to {
-    width: 100%; } }
-
-@keyframes progress {
-  from {
-    width: 0%; }
-
-  to {
-    width: 100%; } }
+.t .quote-progress {
+  height: 3px;
+  -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+          transform: translateX(0%);
+  transition: -webkit-transform 14s linear;
+  transition: transform 14s linear; }
 
 /*!
 Animate.css - http://daneden.me/animate
@@ -3103,7 +3095,8 @@ html {
 
 body {
   font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-  line-height: 1.43; }
+  line-height: 1.43;
+  background-color: #FBF9F4; }
 
 h1, h2, h3, h4 {
   font-weight: 300;
