@@ -465,7 +465,7 @@ blockquote img {
   margin-right: 1em; }
 
 .quote-progress {
-  background: #F5F2EA;
+  background-color: #F5F2EA;
   width: 100%;
   display: block;
   -webkit-transform: translateX(-100%);
