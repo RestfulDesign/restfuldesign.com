@@ -4,13 +4,11 @@
 new WOW().init();
 
 window.addEventListener('load', function() {
-  var topNav = document.getElementById("nav");
+  var topNav = document.querySelector(".nav");
   
 
   changeBackgroundColor(topNav);
-  
-  CarouselInViewport()
-  
+    
   // On scroll actions
   window.onscroll = function() {
     changeBackgroundColor(topNav);
