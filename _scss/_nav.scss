@@ -12,7 +12,6 @@ nav.fixed {
   background: $light-yellow;
   background: rgba(254, 254, 254, 0.98);
   border-bottom: 1px solid $grey;
-//  border-bottom: 1px solid rgba(221, 221, 221, 0.5);
 }
 nav .content {
   padding-top: 1em;
@@ -44,9 +43,5 @@ nav a {
 }
 nav a:hover {
   background-color: rgba(255, 255, 255, 0.25);
-  -webkit-transition: background .5s ease;
-     -moz-transition: background .5s ease;
-      -ms-transition: background .5s ease;
-       -o-transition: background .5s ease;
-          transition: background .5s ease;
+  transition: background .5s ease;
 }

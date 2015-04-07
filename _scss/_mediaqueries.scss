@@ -1,7 +1,6 @@
 /*
  * Mediaqueries
  */
-
 @media screen and (min-width: 34em) {
   h1 {
     font-size: 3.6em;
@@ -10,7 +9,6 @@
     font-size: 29px;
   }
 }
-
 @media screen and (max-width: 1024px) {
   .grid .unit {
     width: 100% !important;
@@ -74,11 +72,8 @@
 
   }
   #services {
-/*		width: 90%;*/
     margin: 2em auto;
     > div {
-/*			width: 33%;
-      float: left;*/
       > p {
         font-size: 1.8em;
       }
@@ -92,21 +87,6 @@
   h3 {
     font-size: 2.7em;
   }
-  /*#services {
-    width: 90%;
-    margin: 2em auto;
-    > div {
-      width: 33%;
-      float: left;
-      > div {
-        width: 100px;
-        height: 100px;
-      }
-      > p {
-        font-size: 1.8em;
-      }
-    }
-  }*/
 }
 @media screen and (min-width: 92em) {
   h1 {
@@ -116,11 +96,3 @@
     font-size: 48px;
   }
 }
-
-
-
-/*@media screen and (max-width: 34em) {
-  h1 {
-    font-size: 56px;
-  }
-}*/
