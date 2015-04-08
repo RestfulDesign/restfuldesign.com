@@ -16,9 +16,11 @@
 }
 .shopify li {
   list-style-image: url(./img/tick-green.svg);
-  padding: .5em 1.5em .5em 0;
-  margin-left: 3em;
+  padding-top: 1em;
+  margin-left: -8px;
   font-size: 1.6em;
+  text-align: center;
+  list-style-position: inside;
 }
 .shopify .one-third {
   float: left;

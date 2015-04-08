@@ -3,9 +3,22 @@
  */
 new WOW().init();
 
-window.addEventListener('load', function() {
+window.addEventListener("load", function() {
   var topNav = document.querySelector(".nav");
-  
+
+  enquire.register("screen and (max-width:767px)", {
+    match : function() {
+      var arkdesImg = document.querySelector(".arkdes-img");
+      var parent = arkdesImg.parentNode;
+      parent.insertBefore(arkdesImg, parent.firstChild);
+    },
+    unmatch : function() {
+      
+      var arkdesImg = document.querySelector(".arkdes-txt");
+      var parent = arkdesImg.parentNode;
+      parent.insertBefore(arkdesImg, parent.firstChild);
+    }
+  });
 
   changeBackgroundColor(topNav);
     
@@ -15,12 +28,12 @@ window.addEventListener('load', function() {
   }
 }, false);
 
-function changeBackgroundColor(id) {
+function changeBackgroundColor(el) {
   var y = window.pageYOffset || document.documentElement.scrollTop;
   if (y > 20) {
-    id.className = "fixed"; 
+    el.className = "fixed"; 
   } else {      
-    id.className = "";      
+    el.className = "";      
   }
 }
 

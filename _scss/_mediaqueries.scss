@@ -1,17 +1,70 @@
 /*
  * Mediaqueries
  */
-@media screen and (min-width: 34em) {
+@media screen and (max-width: 534px) {
   h1 {
-    font-size: 3.6em;
+    font-size: 3.6em !important;
+    margin: 0 .5em;
   }
   h2 {
     font-size: 29px;
   }
-}
-@media screen and (max-width: 1024px) {
-  .grid .unit {
+  .content {
+    width: 100%;
+  }
+  .more-margin-top {
+    margin-top: 0;
+  }
+  .grid .half, 
+  .grid .w-1-2,
+  .grid .unit{
     width: 100% !important;
+  }
+  .unit img {
+    width: 66%;
+  }
+  nav img.logo {
+    float: left;
+    width: 40%;
+    margin-left: .5em;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .menu-toggle {
+    display: block;
+  }
+  .header h1 {
+    padding-top: 0px;
+  }
+  .header h2.margin-bottom {
+    margin: 0;
+  }
+  .header .picture {
+    width: 280px;
+  }
+  .web-dev img,
+  .web-dev .tech-logos {
+    display: none;
+  }
+  .shopify .leading {
+    max-width: 90%;
+  }
+  .portfolio h2,
+  .portfolio h3,
+  .portfolio a {
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1023px) {
+  h1 {
+    font-size: 4.8em;
+  }
+  h2 {
+    font-size: 29px;
+  }
+  .grid .unit {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -48,12 +101,12 @@
     padding-top: 112px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   h1 {
-    font-size: 4.8em;
+    font-size: 6.8em;
   }
   h2 {
-    font-size: 29px;
+    font-size: 4.8em;
   }
   nav img.logo {
     float: left;
@@ -81,8 +134,11 @@
   }
 }
 @media screen and (min-width: 72em) {
+  h1 {
+    font-size: 7.2em;
+  }
   h2 {
-    font-size: 36px;
+    font-size: 4.8em;
   }
   h3 {
     font-size: 2.7em;

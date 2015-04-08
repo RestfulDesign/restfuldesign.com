@@ -6,7 +6,7 @@ nav {
   width: 100%;
   z-index:2;
   line-height: 50px;
-  transition: background-color .5s linear;
+  transition: background-color .3s linear;
 }
 nav.fixed {
   background: $light-yellow;
@@ -19,6 +19,12 @@ nav .content {
 nav img.logo {
   margin: 0 auto;
   display: block;
+}
+nav .menu-toggle {
+  display: none;
+  float: right;
+  margin-top: -3px;
+  margin-right: 1.5em;
 }
 nav ul {
   overflow: hidden;
@@ -37,7 +43,7 @@ nav a {
   text-decoration: none;
   letter-spacing: 1px;
   text-transform: capitalize;
-  font-weight: 300;
+  font-weight: 400;
   padding: 10px;
   border-radius: 3px;
 }
