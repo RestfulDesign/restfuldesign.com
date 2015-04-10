@@ -13,7 +13,7 @@ var messages = {
 };
 
 var paths = {
-  scripts: ['src/plugins/*.js', 'src/*.js']
+  scripts: ['src/js/plugins/*.js', 'src/js/*.js']
 };
 
 /**
@@ -44,37 +44,37 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 });
 
 gulp.task('minify-css', function() {
-  return gulp.src('css/main.css')
+  return gulp.src('src/css/main.css')
     .pipe(minifyCSS({keepBreaks:true}))
     .pipe(gulp.dest('./dist'))
 });
 
 gulp.task('scripts', function() {
-  // Minify and copy all JavaScript (except vendor scripts)
+  // Minify and copy all JavaScript
   // with sourcemaps all the way down
   return gulp.src(paths.scripts)
     .pipe(sourcemaps.init())
       .pipe(concat('all.min.js'))
       .pipe(uglify())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./dist'))
-  .pipe(gulp.dest('_site/dist'))
+    .pipe(gulp.dest('./dist/js'))
+  .pipe(gulp.dest('_site/dist/js'))
   .pipe(browserSync.reload({stream:true}));
 });
+
 /**
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
 gulp.task('sass', function () {
-  return gulp.src('_scss/main.scss')
+  return gulp.src('src/scss/main.scss')
     .pipe(sass({
       includePaths: ['scss'],
       onError: browserSync.notify
     }))
     .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-    .pipe(gulp.dest('css'))
     .pipe(minifyCSS({keepBreaks:true}))
-    .pipe(gulp.dest('./dist'))
-    .pipe(gulp.dest('_site/dist'))
+    .pipe(gulp.dest('./dist/css'))
+    .pipe(gulp.dest('_site/dist/css'))
     .pipe(browserSync.reload({stream:true}));
 });
 
@@ -83,8 +83,8 @@ gulp.task('sass', function () {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-  gulp.watch('_scss/*.scss', ['sass']);
-  gulp.watch(['src/*.js', 'src/**/*.js'], ['scripts']);
+  gulp.watch('src/scss/*.scss', ['sass']);
+  gulp.watch(['src/js/*.js', 'src/js/**/*.js'], ['scripts']);
   gulp.watch(['index.html', 'design-guide/*.html', 'design/*.html', 'ecommerce/*.html', 'development/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 

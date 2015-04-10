@@ -1,13 +1,13 @@
+nav,nav #mobile-menu.show{position:fixed;top:0;left:0}
 .border-button,.call-to-action,nav a{text-decoration:none}
 .list-unstyled,.services li,nav li{list-style:none}
 .portfolio li,.shopify li{list-style-position:inside}
 .header,.portfolio,blockquote,nav ul{overflow:hidden}
-.grid .unit,.quotes,html{position:relative}
 .grid,.unit,html{box-sizing:border-box}
 .grid,.grid:after,h1{clear:both}
 a,body,p{font-family:Roboto,'Helvetica Neue',Arial,sans-serif}
 .grid{display:block}
-.grid .unit{float:left;width:100%;padding:10px}
+.grid .unit{float:left;width:100%;padding:10px;position:relative}
 .grid .unit:first-child{padding-left:20px}
 .grid .unit:last-child{padding-right:20px}
 .unit .unit:first-child{padding-left:0}
@@ -64,44 +64,48 @@ a,body,p{font-family:Roboto,'Helvetica Neue',Arial,sans-serif}
 .bold{font-weight:700}
 .border-button{border:1px solid #65c7fd;padding:9px 18px;border-radius:30px}
 .call-to-action{margin:2em;padding:1em 2em;border:2px solid #fafafa;border-radius:25px}
+.picture img,nav img.logo{display:block;margin:0 auto}
 .call-to-action:hover{padding:1em 2em;border:2px solid rgba(104,166,52,.95)}
 .green{background-color:rgba(104,166,52,.95);color:#f4f4f4}
 .grey{color:#F5F2EA}
 .box-shadow{box-shadow:0 2px 7px #E7E7E7}
-.header{width:100%;max-height:840px;margin:0 auto;padding-top:2em;background:url(img/gradient-grey-tint-poly.svg)center center no-repeat #fbfbfb;background-size:cover}
-.picture img{display:block;max-width:100%;margin:0 auto}
-.header .show-more-arrow{display:block;margin:2em auto 0;width:60px;height:80px;font-size:12px;text-align:center;color:#c3c2c2;fill:#00f}
-.header .show-more-arrow img{margin-top:5px}
-nav{position:fixed;-webkit-backface-visibility:hidden;top:0;left:0;width:100%;z-index:2;line-height:50px;transition:background-color .3s linear}
+.header{width:100%;max-height:840px;margin:0 auto;padding-top:2em;background:url(../img/gradient-grey-tint-poly.svg)center center no-repeat #fbfbfb;background-size:cover}
+.picture img{max-width:100%}
+nav{-webkit-backface-visibility:hidden;width:100%;z-index:2;line-height:50px;transition:background-color .3s linear}
 nav.fixed{background:#FBF9F4;background:rgba(254,254,254,.98);border-bottom:1px solid #F5F2EA}
 nav .content{padding-top:1em}
-nav img.logo{margin:0 auto;display:block}
-nav .menu-toggle{display:none;float:right;margin-top:-3px;margin-right:1.5em}
+nav #menu-toggle{display:none;float:right;margin-top:-3px;margin-right:1.5em}
+nav #mobile-menu.show{display:block;bottom:0;background-color:#fff;width:100%;padding:20%}
+.quotes,html{position:relative}
+nav #mobile-menu.show li{display:block;float:none;width:100%}
+nav #mobile-menu.show li a{font-size:3.6em}
 nav ul{padding:0;margin:0 auto;display:block}
 nav li{float:left;width:25%}
-#services,.portfolio img{width:100%}
+nav li#close{display:none}
 nav a{letter-spacing:1px;text-transform:capitalize;font-weight:400;padding:10px;border-radius:3px}
 h1,h2,h3,h4,p{font-weight:300}
 nav a:hover{background-color:rgba(255,255,255,.25);transition:background .5s ease}
+#services{width:100%}
 #services .img-wrapper{height:100px}
-#services img{display:block;margin:3em auto}
+#services img{width:90%;display:block;margin:3em auto}
 #services p{color:#7b7c7c}
 .services h2{padding:2em 0 1em;font-size:3.1em}
 .services ul{margin-top:2em;margin-bottom:3em}
 .services li{font-size:1.8em;color:#666;line-height:1.8;font-style:italic}
 .design{min-height:100px}
+.portfolio img{width:100%}
 .portfolio a{font-size:1.7em}
 .portfolio ul,.shopify li{font-size:1.6em}
 .left-pos{left:2em}
 .right-pos{right:2em}
-.the-team{background:url(img/stockholm-white.jpg)center center no-repeat #fbfbfb;background-size:cover}
+.the-team{background:url(../img/stockholm-white.jpg)center center no-repeat #fbfbfb;background-size:cover}
 .the-team img{width:17em;height:auto;border-radius:50%;padding:5px;background-color:#fff}
 .web-dev p{max-width:24em}
 .shopify .head{padding:2em 0;border-bottom:1px solid #ddd}
 .shopify img{width:300px}
 .shopify .border{border-top:none;border-bottom:none}
 .shopify ul{min-height:250px}
-.shopify li{list-style-image:url(./img/tick-green.svg);padding-top:1em;margin-left:-8px}
+.shopify li{list-style-image:url(../img/tick-green.svg);padding-top:1em;margin-left:-8px}
 .shopify .one-third{float:left;width:33%}
 .quotes{min-height:200px;font-style:italic}
 blockquote{width:90%}
@@ -610,7 +614,7 @@ h2{font-size:29px}
 .unit img{width:66%}
 nav img.logo{float:left;width:40%;margin-left:.5em}
 nav ul{display:none}
-nav .menu-toggle{display:block}
+nav #menu-toggle{display:block}
 .header h1{padding-top:0}
 .header h2.margin-bottom{margin:0}
 .header .picture{width:280px}

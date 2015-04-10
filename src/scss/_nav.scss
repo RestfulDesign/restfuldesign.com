@@ -20,11 +20,30 @@ nav img.logo {
   margin: 0 auto;
   display: block;
 }
-nav .menu-toggle {
+nav #menu-toggle {
   display: none;
   float: right;
   margin-top: -3px;
   margin-right: 1.5em;
+}
+nav #mobile-menu.show {
+  width: 100%;
+  display: block;
+  position: fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  background-color: #fff;
+  width: 100%;
+  padding: 20%;
+  li{
+    display: block;
+    float: none;
+    width: 100%;
+    a {
+      font-size: 3.6em;
+    }    
+  }
 }
 nav ul {
   overflow: hidden;
@@ -38,6 +57,9 @@ nav li {
   float: left;
   width: 25%;
   text-align: center;
+}
+nav li#close {
+  display:none;
 }
 nav a {
   text-decoration: none;
