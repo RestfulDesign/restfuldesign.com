@@ -1,4 +1,3 @@
-nav,nav #mobile-menu.show{position:fixed;top:0;left:0}
 .border-button,.call-to-action,nav a{text-decoration:none}
 .list-unstyled,.services li,nav li{list-style:none}
 .portfolio li,.shopify li{list-style-position:inside}
@@ -71,14 +70,10 @@ a,body,p{font-family:Roboto,'Helvetica Neue',Arial,sans-serif}
 .box-shadow{box-shadow:0 2px 7px #E7E7E7}
 .header{width:100%;max-height:840px;margin:0 auto;padding-top:2em;background:url(../img/gradient-grey-tint-poly.svg)center center no-repeat #fbfbfb;background-size:cover}
 .picture img{max-width:100%}
-nav{-webkit-backface-visibility:hidden;width:100%;z-index:2;line-height:50px;transition:background-color .3s linear}
+nav{position:fixed;-webkit-backface-visibility:hidden;top:0;left:0;width:100%;z-index:2;line-height:50px;transition:background-color .3s linear}
 nav.fixed{background:#FBF9F4;background:rgba(254,254,254,.98);border-bottom:1px solid #F5F2EA}
 nav .content{padding-top:1em}
 nav #menu-toggle{display:none;float:right;margin-top:-3px;margin-right:1.5em}
-nav #mobile-menu.show{display:block;bottom:0;background-color:#fff;width:100%;padding:20%}
-.quotes,html{position:relative}
-nav #mobile-menu.show li{display:block;float:none;width:100%}
-nav #mobile-menu.show li a{font-size:3.6em}
 nav ul{padding:0;margin:0 auto;display:block}
 nav li{float:left;width:25%}
 nav li#close{display:none}
@@ -107,7 +102,7 @@ nav a:hover{background-color:rgba(255,255,255,.25);transition:background .5s eas
 .shopify ul{min-height:250px}
 .shopify li{list-style-image:url(../img/tick-green.svg);padding-top:1em;margin-left:-8px}
 .shopify .one-third{float:left;width:33%}
-.quotes{min-height:200px;font-style:italic}
+.quotes{min-height:200px;font-style:italic;position:relative}
 blockquote{width:90%}
 blockquote.t{opacity:1;transition:opacity 2s}
 blockquote p{font-size:2.1rem}
@@ -615,6 +610,9 @@ h2{font-size:29px}
 nav img.logo{float:left;width:40%;margin-left:.5em}
 nav ul{display:none}
 nav #menu-toggle{display:block}
+nav #mobile-menu.show{display:block;position:fixed;top:0;left:0;bottom:0;background-color:#fff;width:100%;padding:20%}
+nav #mobile-menu.show li{display:block;float:none;width:100%}
+nav #mobile-menu.show li a{font-size:3.6em}
 .header h1{padding-top:0}
 .header h2.margin-bottom{margin:0}
 .header .picture{width:280px}
@@ -650,7 +648,7 @@ h2{font-size:48px}}
 *{margin:0;padding:0}
 *,:after,:before{box-sizing:inherit}
 body,html{width:100%;height:100%}
-html{font-size:62.5%}
+html{position:relative;font-size:62.5%}
 body{line-height:1.43;background-color:#FBF9F4}
 h1,h2,h3,h4{line-height:1.3;-webkit-font-smoothing:antialiased}
 h1{color:#333}

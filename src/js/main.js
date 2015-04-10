@@ -24,7 +24,8 @@ window.addEventListener("load", function() {
       var parent = arkdesImg.parentNode;
       parent.insertBefore(arkdesImg, parent.firstChild);
     },
-    unmatch : function() {    
+    unmatch : function() {
+      toggleClass(document.getElementById('mobile-menu'), 'show');  
       var mobileMenu = document.getElementById("mobile-menu");
       mobileMenu.removeEventListener("click", showMenu, false);
       var arkdesImg = document.querySelector(".arkdes-txt");
