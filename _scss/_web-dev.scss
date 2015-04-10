@@ -1,29 +1,3 @@
 .web-dev p {
   max-width: 24em;
 }
-.tech-logos {
-  width: 100%;
-  height: 512px;
-  background: url(img/tech-logos.svg);
-  background-repeat: repeat-x;
-  background-size: 4438px;
-  background-position: 0px 0px;      
-//  animation: slide 80s linear infinite;
-  transform: translateZ(0);
-} 
-@-webkit-keyframes slide {
-  from { background-position: 0 0; }
-  to { background-position: -4438px 0; }
-}
-@-moz-keyframes slide {
-  from { background-position: 0 0; }
-  to { background-position: -4438px 0; }
-}
-@-ms-keyframes slide {
-  from { background-position: 0 0; }
-  to { background-position: -4438px 0; }
-}
-@keyframes slide {
-  from { background-position: 0 0; }
-  to { background-position: -4438px 0; }
-}

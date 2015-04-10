@@ -84,7 +84,7 @@ nav a{letter-spacing:1px;text-transform:capitalize;font-weight:400;padding:10px;
 h1,h2,h3,h4,p{font-weight:300}
 nav a:hover{background-color:rgba(255,255,255,.25);transition:background .5s ease}
 #services .img-wrapper{height:100px}
-#services img{display:block;max-width:80px;margin:3em auto}
+#services img{display:block;margin:3em auto}
 #services p{color:#7b7c7c}
 .services h2{padding:2em 0 1em;font-size:3.1em}
 .services ul{margin-top:2em;margin-bottom:3em}
@@ -97,13 +97,6 @@ nav a:hover{background-color:rgba(255,255,255,.25);transition:background .5s eas
 .the-team{background:url(img/stockholm-white.jpg)center center no-repeat #fbfbfb;background-size:cover}
 .the-team img{width:17em;height:auto;border-radius:50%;padding:5px;background-color:#fff}
 .web-dev p{max-width:24em}
-.tech-logos{width:100%;height:512px;background:url(img/tech-logos.svg)repeat-x;background-size:4438px;-webkit-transform:translateZ(0);transform:translateZ(0)}
-@-webkit-keyframes slide{from{background-position:0 0}
-to{background-position:-4438px 0}}
-@-ms-keyframes slide{from{background-position:0 0}
-to{background-position:-4438px 0}}
-@keyframes slide{from{background-position:0 0}
-to{background-position:-4438px 0}}
 .shopify .head{padding:2em 0;border-bottom:1px solid #ddd}
 .shopify img{width:300px}
 .shopify .border{border-top:none;border-bottom:none}
