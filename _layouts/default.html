@@ -9,8 +9,8 @@
       /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
       function loadJS(e,t){"use strict";var n=window.document.getElementsByTagName("script")[0],o=window.document.createElement("script");return o.src=e,o.async=!0,n.parentNode.insertBefore(o,n),t&&"function"==typeof t&&(o.onload=t),o}
       // load assets
-      loadCSS( "dist/css/{{ page.css }}.css" );
-      loadJS( "dist/js/{{ page.js }}.min.js" );
+      loadCSS( "{{site.baseurl}}/dist/css/{{ page.css }}.css" );
+      loadJS( "{{site.baseurl}}/dist/js/{{ page.js }}.min.js" );
     </script>
     <noscript><link href="dist/css/main.css" rel="stylesheet"></noscript>
     <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
@@ -22,7 +22,7 @@
   </body>
   <footer id="contact" class="content align-center footer padding-bottom more-margin-top" itemscope itemtype="http://schema.org/LocalBusiness">
     <p>
-      <a href="mailto:contact@restfuldesign.com">contact@restfuldesign.com</a> | <span itemprop="telephone"><a href="tel:+46736258504">+46 (0) 73 625 85 04</a></span> | Godkänd för F-skatt | Alla priser exkl moms | copyright 2015
+      <a href="mailto:contact@restfuldesign.com">contact@restfuldesign.com</a> | <span itemprop="telephone"><a href="tel:+46736258504">+46 (0) 11 300 1555</a></span> | Godkänd för F-skatt | Alla priser exkl moms | copyright 2015
     </p>
   </footer>
 </html>
