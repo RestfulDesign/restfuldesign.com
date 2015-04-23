@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="83px" height="82px" viewBox="0 0 83 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>linkedin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Linkedin" sketch:type="MSLayerGroup" fill="#fff">
+            <g id="linkedin" sketch:type="MSShapeGroup">
+                <path d="M41.059,2 C19.554,2 2.059,19.495 2.059,41 C2.059,62.5 19.554,80 41.059,80 C62.564,80 80.059,62.5 80.059,41 C80.059,19.495 62.564,2 41.059,2 L41.059,2 Z M41.059,82 C18.452,82 0.059,63.61 0.059,41 C0.059,18.392 18.452,0 41.059,0 C63.667,0 82.059,18.392 82.059,41 C82.059,63.61 63.667,82 41.059,82 L41.059,82 Z" id="Fill-37"></path>
+                <path d="M59,55.91 L51.041,55.91 L51.041,44.27 C51.041,41.23 49.799,39.155 47.062,39.155 C44.969,39.155 43.806,40.555 43.263,41.91 C43.057,42.39 43.091,43.07 43.091,43.74 L43.091,55.91 L35.208,55.91 C35.208,55.91 35.313,35.305 35.208,33.432 L43.091,33.432 L43.091,36.957 C43.557,35.417 46.075,33.216 50.094,33.216 C55.081,33.216 59,36.448 59,43.41 L59,55.91 L59,55.91 Z M27.236,30.621 L27.185,30.621 C24.647,30.621 23,28.9 23,26.723 C23,24.507 24.694,22.823 27.287,22.823 C29.873,22.823 31.465,24.503 31.517,26.718 C31.517,28.896 29.873,30.621 27.236,30.621 L27.236,30.621 Z M23.905,33.432 L30.926,33.432 L30.926,55.91 L23.905,55.91 L23.905,33.432 Z" id="Fill-38"></path>
+            </g>
+        </g>
+    </g>
+</svg>

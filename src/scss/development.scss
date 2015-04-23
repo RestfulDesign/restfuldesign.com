@@ -1,0 +1,107 @@
+@import "gridism";
+@import "globals";
+@import "header";
+@import "nav";
+@import "services";
+@import "portfolio";
+@import "the-team";
+@import "web-dev";
+@import "shopify";
+@import "quotes";
+@import "animate";
+@import "footer";
+
+h1 {
+  padding-top: 1em;
+}
+
+.benefits li span {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  line-height: 50px;
+  margin-right: 1em;
+  font-size: 2.4em;
+  color: #999;
+}
+
+.benefits li div {
+  width: 80%;
+}
+.quotes blockquote{
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+  overflow: visible;
+  padding-bottom:2px;
+}
+.down-arrow {
+  display: block;
+  position: absolute;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  right: 30px;
+  bottom: -10px;
+  transform: rotate(45deg);
+}
+.quotes > span {
+  margin-right: 5%;
+  margin-top: 20px;
+}
+.quotes:after {
+  clear: both;
+}
+.contact h4,
+.contact p {
+  color: #fff;
+}
+.contact h5 {
+  color: #F5F5F5;
+}
+.contact form {
+  font-family: $prim-font-stack;
+}
+.contact ::-webkit-input-placeholder { /* WebKit browsers */
+  color: rgba(255, 255, 255, 0.7);
+  text-transform:uppercase
+}
+.contact :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:    #fafafa;
+  opacity:  1;
+}
+.contact ::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    #fafafa;
+  opacity:  1;
+}
+.contact :-ms-input-placeholder { /* Internet Explorer 10+ */
+  color:    #fafafa;
+}
+.contact label,
+.contact input,
+.contact textarea {
+  font-family: $prim-font-stack;
+  display: block;
+  font-size: 1.9rem;
+  width: 90%;
+  background: none;
+  padding: 1.6rem;
+  margin: 1em 0;
+  border: 1px solid #fafafa;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  color: #fafafa;
+}
+.contact label {
+  display: none;
+}
+.contact textarea {
+  height: 200px;
+}
+.contact .submit {
+  width: 50%;
+  border:none;
+}
+
+@import "mediaqueries";

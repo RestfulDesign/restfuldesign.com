@@ -1,12 +1,12 @@
 .block,.grid,.leading{display:block}
-.grid .unit,html{position:relative}
+.grid .unit,.quotes,html{position:relative}
 .grid,.unit,html{box-sizing:border-box}
-.grid,.grid:after,h1{clear:both}
-a,body,p{font-family:Roboto,'Helvetica Neue',Arial,sans-serif}
 .border-button,.call-to-action,nav a{text-decoration:none}
 .list-unstyled,.services li,nav li{list-style:none}
 .portfolio li,.shopify li{list-style-position:inside}
 .header,.portfolio,blockquote,nav ul{overflow:hidden}
+.grid,.grid:after,.quotes:after,h1{clear:both}
+.contact form,.contact input,.contact label,.contact textarea,a,body,p{font-family:Roboto,'Helvetica Neue',Arial,sans-serif}
 .grid .unit{float:left;width:100%;padding:10px}
 .grid .unit:first-child{padding-left:20px}
 .grid .unit:last-child{padding-right:20px}
@@ -93,6 +93,7 @@ nav ul{padding:0;margin:0 auto;display:block}
 nav li{float:left;width:25%}
 nav li#close{display:none}
 nav a{letter-spacing:1px;text-transform:capitalize;font-weight:400;padding:10px;border-radius:3px}
+.benefits li span,blockquote img{margin-right:1em;border-radius:50%}
 nav a:hover{background-color:rgba(255,255,255,.25);transition:background .5s ease}
 #services{width:100%}
 #services .img-wrapper{height:100px}
@@ -111,17 +112,18 @@ nav a:hover{background-color:rgba(255,255,255,.25);transition:background .5s eas
 .the-team img{width:17em;height:auto;border-radius:50%;padding:5px;background-color:#fff}
 .web-dev p{max-width:24em}
 .shopify .head{padding:2em 0;border-bottom:1px solid #ddd}
+.shopify li,h1{padding-top:1em}
 .shopify img{width:300px}
 .shopify .border{border-top:none;border-bottom:none}
 .shopify ul{min-height:250px}
-.shopify li{list-style-image:url(../img/tick-green.svg);padding-top:1em;margin-left:-8px}
+.shopify li{list-style-image:url(../img/tick-green.svg);margin-left:-8px}
 .shopify .one-third{float:left;width:33%}
-.quotes{min-height:200px;font-style:italic;position:relative}
+.quotes{min-height:200px;font-style:italic}
 blockquote{width:90%}
 blockquote.t{opacity:1;transition:opacity 2s}
 blockquote p{font-size:2.1rem}
 blockquote i{line-height:48px;vertical-align:top}
-blockquote img{width:48px;height:48px;border-radius:50%;margin-right:1em}
+blockquote img{width:48px;height:48px}
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -615,6 +617,21 @@ Copyright (c) 2014 Daniel Eden
 @keyframes slideOutUp{0%{-webkit-transform:translateY(0);transform:translateY(0)}
 100%{visibility:hidden;-webkit-transform:translateY(-100%);transform:translateY(-100%)}}
 .slideOutUp{-webkit-animation-name:slideOutUp;animation-name:slideOutUp}
+.benefits li span{width:50px;height:50px;border:1px solid #ccc;line-height:50px;font-size:2.4em;color:#999}
+.benefits li div{width:80%}
+.quotes blockquote{border-radius:5px;background-color:#fff;position:relative;overflow:visible;padding-bottom:2px}
+.down-arrow{display:block;position:absolute;background-color:#fff;width:20px;height:20px;right:30px;bottom:-10px;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}
+.quotes>span{margin-right:5%;margin-top:20px}
+.contact h4,.contact p{color:#fff}
+.contact h5{color:#F5F5F5}
+.contact ::-webkit-input-placeholder{color:rgba(255,255,255,.7);text-transform:uppercase}
+.contact :-moz-placeholder{color:#fafafa;opacity:1}
+.contact ::-moz-placeholder{color:#fafafa;opacity:1}
+.contact :-ms-input-placeholder{color:#fafafa}
+.contact input,.contact label,.contact textarea{display:block;font-size:1.9rem;width:90%;background:0 0;padding:1.6rem;margin:1em 0;border:1px solid #fafafa;border:1px solid rgba(255,255,255,.5);border-radius:5px;color:#fafafa}
+.contact label{display:none}
+.contact textarea{height:200px}
+.contact .submit{width:50%;border:none}
 @media screen and (max-width:534px){h1{font-size:3.6em!important;margin:0 .5em}
 h2{font-size:29px}
 .content{width:100%}
