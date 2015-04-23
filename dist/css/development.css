@@ -622,7 +622,7 @@ Copyright (c) 2014 Daniel Eden
 .quotes blockquote{border-radius:5px;background-color:#fff;position:relative;overflow:visible;padding-bottom:2px}
 .down-arrow{display:block;position:absolute;background-color:#fff;width:20px;height:20px;right:30px;bottom:-10px;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}
 .quotes>span{margin-right:5%;margin-top:20px}
-.contact h4,.contact p{color:#fff}
+.contact h4,.contact p{color:#fff;font-weight:700}
 .contact h5{color:#F5F5F5}
 .contact ::-webkit-input-placeholder{color:rgba(255,255,255,.7);text-transform:uppercase}
 .contact :-moz-placeholder{color:#fafafa;opacity:1}
