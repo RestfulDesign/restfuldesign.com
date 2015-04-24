@@ -1,7 +1,7 @@
 .block,.grid,.leading{display:block}
 .grid .unit,.quotes,html{position:relative}
 .grid,.unit,html{box-sizing:border-box}
-.border-button,.call-to-action,nav a{text-decoration:none}
+.border-button,.call-to-action,a,nav a{text-decoration:none}
 .list-unstyled,.services li,nav li{list-style:none}
 .portfolio li,.shopify li{list-style-position:inside}
 .header,.portfolio,blockquote,nav ul{overflow:hidden}
