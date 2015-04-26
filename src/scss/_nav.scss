@@ -8,10 +8,11 @@ nav {
   line-height: 50px;
   transition: background-color .3s linear;
 }
-nav.fixed {
+nav.fixed, .headroom--not-top {
   background: $light-yellow;
   background: rgba(254, 254, 254, 0.98);
   border-bottom: 1px solid $grey;
+//  transition: background-color .3s linear;
 }
 nav .content {
   padding-top: 1em;
@@ -53,4 +54,13 @@ nav a {
 nav a:hover {
   background-color: rgba(255, 255, 255, 0.25);
   transition: background .5s ease;
+}
+.headroom {
+    transition: all 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
 }

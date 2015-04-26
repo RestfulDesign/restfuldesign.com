@@ -7,7 +7,17 @@ window.addEventListener("load", function() {
   var topNav = document.querySelector(".nav");
   var menuToggle = document.getElementById("menu")
   
-  changeBackgroundColor(topNav);
+  // construct an instance of Headroom, passing the element
+  var headroom  = new Headroom(topNav, {
+ // vertical offset in px before element is first unpinned
+    offset : 40,
+    // scroll tolerance in px before state changes
+    tolerance : 10,
+  });
+  // initialise
+  headroom.init(); 
+  
+  // changeBackgroundColor(topNav);
   
   document.getElementById("menu-toggle").addEventListener("click", function() {
     toggleClass(document.getElementById('mobile-menu'), 'show');
@@ -39,7 +49,7 @@ window.addEventListener("load", function() {
   } 
   // On scroll actions
   window.onscroll = function() {
-    changeBackgroundColor(topNav);
+    // changeBackgroundColor(topNav);
   }
 }, false);
 

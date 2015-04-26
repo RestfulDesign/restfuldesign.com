@@ -12,3 +12,56 @@
 @import "animate";
 @import "footer";
 @import "mediaqueries";
+
+.contact h4,
+.contact p {
+//  color: #222;
+  font-weight: bold;
+}
+.contact h5 {
+//  color: #333;
+}
+.contact form {
+  font-family: $prim-font-stack;
+}
+.contact ::-webkit-input-placeholder { /* WebKit browsers */
+  color: #ccc;
+  text-transform:uppercase
+}
+.contact :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:    #ccc;
+  opacity:  1;
+}
+.contact ::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    #ccc;
+  opacity:  1;
+}
+.contact :-ms-input-placeholder { /* Internet Explorer 10+ */
+  color:    #ccc;
+}
+.contact label,
+.contact input,
+.contact textarea {
+  font-family: $prim-font-stack;
+  display: block;
+  font-size: 1.9rem;
+  width: 90%;
+  background: none;
+  padding: 1.6rem;
+  margin: 1em 0;
+  border: 1px solid #ccc;
+//  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  color: #111;
+}
+.contact label {
+  display: none;
+}
+.contact textarea {
+  height: 200px;
+}
+.contact .submit {
+  width: 50%;
+  border:none;
+  color: #fff;
+}
